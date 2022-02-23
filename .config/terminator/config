@@ -1,0 +1,45 @@
+[global_config]
+[keybindings]
+  help = <Primary>F1
+[profiles]
+  [[default]]
+    background_color = "#2a2520"
+    background_darkness = 0.95
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    foreground_color = "#ece1d7"
+    palette = "#352f2a:#b65c60:#78997a:#ebc06d:#9aacce:#b380b0:#86a3a3:#a38d78:#4d453e:#f17c64:#99d59d:#ebc06d:#9aacce:#ce9bcb:#88b3b2:#c1a78e"
+  [[Gruvbox]]
+    background_color = "#282828"
+    background_darkness = 0.97
+    background_type = transparent
+    cursor_color = "#7c6f64"
+    foreground_color = "#ebdbb2"
+    palette = "#181818:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+  [[N0tch2k]]
+    background_color = "#222222"
+    background_darkness = 0.95
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    foreground_color = "#a0a0a0"
+    palette = "#383838:#a95551:#666666:#a98051:#657d3e:#767676:#c9c9c9:#d0b8a3:#474747:#a97775:#8c8c8c:#a99175:#98bd5e:#a3a3a3:#dcdcdc:#d8c8bb"
+  [[melange]]
+    background_color = "#2a2520"
+    background_darkness = 0.95
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    foreground_color = "#ece1d7"
+    palette = "#352f2a:#b65c60:#78997a:#ebc06d:#9aacce:#b380b0:#86a3a3:#a38d78:#4d453e:#f17c64:#99d59d:#ebc06d:#9aacce:#ce9bcb:#88b3b2:#c1a78e"
+  [[Gruvbox Light]]
+    background_color = "#fbf1c7"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#3c3836"
+    palette = "#fbf1c7:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#7c6f64:#928374:#9d0006:#79740e:#b57614:#076678:#8f3f71:#427b58:#3c3836"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
