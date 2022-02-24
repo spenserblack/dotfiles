@@ -6,4 +6,4 @@ end
 
 set -x COWPATH "/usr/share/cowsay/cows:$HOME/cowfiles"
 set -x DENO_INSTALL $HOME/.deno
-set -x EDITOR=nvim
+set -x EDITOR nvim
