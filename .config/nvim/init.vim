@@ -127,6 +127,10 @@ au FileType vue set cc=81
 " Julia's completions and COC's conflict
 au FileType julia CocDisable
 
+" Set default tab widths
+au FileType javascript setlocal tabstop=2
+au FileType python setlocal tabstop=4
+
 let g:ale_linters = {
 	\ 'python': ['flake8'],
 	\ 'asm': [],
