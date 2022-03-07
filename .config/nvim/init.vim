@@ -139,6 +139,12 @@ let g:ale_fixers = {
 \ }
 let g:ale_fix_on_save = 1
 
+" ALEDisable actually doesn't disable everything, so make a custom command
+" that *does.*
+"
+" https://github.com/dense-analysis/ale/issues/2260
+command -bar ALEActuallyDisable         ALEDisable | let g:ale_fix_on_save = 0
+
 " Character remaps
 "" Terminal
 tnoremap <Esc> <C-\><C-n>
