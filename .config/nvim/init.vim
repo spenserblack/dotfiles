@@ -147,7 +147,7 @@ let g:ale_fix_on_save = 1
 " that *does.*
 "
 " https://github.com/dense-analysis/ale/issues/2260
-command -bar ALEActuallyDisable         ALEDisable | let g:ale_fix_on_save = 0
+command -bar ALEDisableForReal          ALEDisable | let g:ale_fix_on_save = 0
 
 " Character remaps
 "" Terminal
