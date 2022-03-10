@@ -33,6 +33,7 @@ Plug 'evanleck/vim-svelte'
 Plug 'dense-analysis/ale'
 Plug 'RRethy/vim-illuminate'
 Plug 'ziglang/zig.vim'
+Plug 'junegunn/limelight.vim'
 
 call plug#end()
 " Display line numbers
