@@ -1,0 +1,3 @@
+#!/bin/sh
+# Because sometimes I forget I already typed in "git" and type it in again.
+git $@
