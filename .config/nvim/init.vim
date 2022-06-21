@@ -34,6 +34,7 @@ Plug 'dense-analysis/ale'
 Plug 'RRethy/vim-illuminate'
 Plug 'ziglang/zig.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'github/copilot.vim'
 
 call plug#end()
 " Display line numbers
