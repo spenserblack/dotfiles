@@ -14,7 +14,7 @@ indent_style = space
 indent_size = 4
 
 # Web Languages {{{
-[*.{js,ts,jsx,tsx}]
+[*.{js,cjs,mjs,ts,jsx,tsx}]
 indent_style = space
 indent_size = 2
 
