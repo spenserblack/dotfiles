@@ -1,1 +1,2 @@
-* linguist-detectable
+.editorconfig linguist-detectable
+.npmrc linguist-detectable
