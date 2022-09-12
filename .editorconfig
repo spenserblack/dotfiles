@@ -6,15 +6,26 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
+# Scripting languages {{{
+[*.py]
+indent_style = space
+indent_size = 4
+
+[*.{sh,bash,fish}]
+indent_style = tab
+# }}}
+
+# Compiled Languages {{{
 [*.go]
 indent_style = tab
 
 [*.rs]
 indent_style = space
 indent_size = 4
+# }}}
 
 # Web Languages {{{
-[*.{js,cjs,mjs,ts,jsx,tsx}]
+[*.{js,cjs,mjs,ts,jsx,tsx,vue,svelte}]
 indent_style = space
 indent_size = 2
 
