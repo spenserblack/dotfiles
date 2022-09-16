@@ -56,8 +56,8 @@ set listchars+=trail:~
 set listchars+=precedes:<
 
 " Make indentLine only conceal characters in NORMAL mode
-let g:indentLine_concealcursor = 'n'
-let g:indentLine_conceallevel = 2
+let g:indentLine_concealcursor = 'nc'
+let g:indentLine_conceallevel = 1
 
 " Use more dotted line for indent guide
 let g:indentLine_char =  '┊'
