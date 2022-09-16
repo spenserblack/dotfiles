@@ -35,6 +35,7 @@ Plug 'RRethy/vim-illuminate'
 Plug 'ziglang/zig.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'github/copilot.vim'
+Plug 'gbprod/yanky.nvim'
 
 call plug#end()
 " Display line numbers
@@ -150,5 +151,43 @@ let g:ale_fix_on_save = 1
 command -bar ALEDisableForReal          ALEDisable | let g:ale_fix_on_save = 0
 
 " Character remaps
+
+"" yanky.nvim
+nmap y <Plug>(YankyYank)
+xmap y <Plug>(YankyYank)
+nmap p <Plug>(YankyPutAfter)
+xmap p <Plug>(YankyPutAfter)
+nmap P <Plug>(YankyPutBefore)
+xmap P <Plug>(YankyPutBefore)
+nmap gp <Plug>(YankyGPutAfter)
+xmap gp <Plug>(YankyGPutAfter)
+nmap gP <Plug>(YankyGPutBefore)
+xmap gP <Plug>(YankyGPutBefore)
+nmap [p <Plug>(YankyPutIndentBeforeLinewise)
+xmap [p <Plug>(YankyPutIndentBeforeLinewise)
+nmap ]p <Plug>(YankyPutIndentAfterLinewise)
+xmap ]p <Plug>(YankyPutIndentAfterLinewise)
+nmap <C-n> <Plug>(YankyCycleForward)
+nmap <C-p> <Plug>(YankyCycleBackward)
+
 "" Terminal
 tnoremap <Esc> <C-\><C-n>
+
+" Lua
+lua << EOF
+	require("yanky").setup({
+		ring = {
+			history_length = 100,
+			storage = "memory",
+			sync_with_numbered_registers = true,
+			cancel_event = "update",
+		},
+		system_clipboard = {
+			sync_with_ring = false,
+		},
+		highlight = {
+			timer = 100,
+			on_put = false,
+		},
+	})
+EOF
