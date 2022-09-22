@@ -1,2 +1,3 @@
 .editorconfig linguist-detectable
 .npmrc linguist-detectable
+.config/tabby/config.yaml linguist-detectable
