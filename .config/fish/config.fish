@@ -12,3 +12,5 @@ set -x COWPATH "/usr/share/cowsay/cows:$HOME/cowfiles"
 set -x DENO_INSTALL $HOME/.deno
 set -x EDITOR nvim
 set -x BROWSER chromium-browser
+set -x GEM_HOME $HOME/.gem
+set -x GEM_PATH $HOME/.gem
