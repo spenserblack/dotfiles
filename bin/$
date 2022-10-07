@@ -1,0 +1,4 @@
+#!/bin/bash
+# Since some script code blocks include "$" at the start, this is a command
+# to forward what comes after the "$" to bash.
+$@
