@@ -1,0 +1,3 @@
+#!/bin/bash
+FIRST_COMMIT=$(git log --reverse --format="%H" | head -1)
+git branch "$1" $FIRST_COMMIT
