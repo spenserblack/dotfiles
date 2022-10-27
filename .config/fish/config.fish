@@ -14,7 +14,3 @@ set -x EDITOR nvim
 set -x BROWSER chromium-browser
 set -x GEM_HOME $HOME/.gem
 set -x GEM_PATH $HOME/.gem
-
-fish_add_path $HOME/bin
-fish_add_path $HOME/.npm/bin
-fish_add_path $GEM_HOME/bin
