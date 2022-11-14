@@ -1,4 +1,5 @@
 " Set up plugins
+" uses junegunn/vim-plug
 call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'editorconfig/editorconfig-vim'
