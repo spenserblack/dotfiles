@@ -1,6 +1,0 @@
-[core]
-	editor = nvim
-[alias]
-	recommit = !git commit -eF $(git rev-parse --git-dir)/COMMIT_EDITMSG
-[grep]
-	lineNumber = true
