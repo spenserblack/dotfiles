@@ -1,14 +1,18 @@
 #!/bin/bash
+DIR=$(dirname $0)
+
+git config --global alias.recommit '!git commit -eF $(git rev-parse --git-dir)/COMMIT_EDITMSG'
+git config --global grep.lineNumber true
+npm config set git-tag-version=false
+
 if [ "$CODESPACES" == true ]; then
 	npm config set editor=code
 	git config --global commit.gpgSign true
 	git config --global tag.gpgSign true
+
+	ln -sf $DIR/.bin $HOME/bin
 else
 	# Local-specific setup
 	git config --global core.editor nvim
 	npm config set editor=nvim
 fi
-
-git config --global alias.recommit '!git commit -eF $(git rev-parse --git-dir)/COMMIT_EDITMSG'
-git config --global grep.lineNumber true
-npm config set git-tag-version=false
