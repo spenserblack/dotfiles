@@ -1,6 +1,8 @@
 #!/bin/bash
 if [ "$CODESPACES" == true ]; then
 	npm config set editor=code
+	git config --global commit.gpgSign true
+	git config --global tag.gpgSign true
 else
 	# Local-specific setup
 	git config --global core.editor nvim
