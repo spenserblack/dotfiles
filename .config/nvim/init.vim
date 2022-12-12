@@ -37,6 +37,7 @@ Plug 'ziglang/zig.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'github/copilot.vim'
 Plug 'gbprod/yanky.nvim'
+Plug 'hachy/eva01.vim'
 
 call plug#end()
 " Display line numbers
