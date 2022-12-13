@@ -16,3 +16,6 @@ else
 	git config --global core.editor nvim
 	npm config set editor=nvim
 fi
+
+echo "Done!"
+echo "You may want to run ~/get-packages to install some packages."

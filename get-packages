@@ -1,0 +1,5 @@
+#!/bin/sh
+APT_PACKAGES="devscripts"
+
+# Install packages
+sudo apt install $APT_PACKAGES
