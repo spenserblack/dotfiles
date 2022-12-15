@@ -24,6 +24,15 @@
     foreground_color = "#a0a0a0"
     palette = "#383838:#a95551:#666666:#a98051:#657d3e:#767676:#c9c9c9:#d0b8a3:#474747:#a97775:#8c8c8c:#a99175:#98bd5e:#a3a3a3:#dcdcdc:#d8c8bb"
   [[melange]]
+    # Permission is hereby granted, free of charge, to any person obtaining a copy
+    # of this software and associated documentation files (the "Software"), to deal
+    # in the Software without restriction, including without limitation the rights
+    # to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    # copies of the Software, and to permit persons to whom the Software is
+    # furnished to do so, subject to the following conditions:
+    #
+    # The above copyright notice and this permission notice shall be included in all
+    # copies or substantial portions of the Software.
     background_color = "#2a2520"
     background_darkness = 0.95
     background_type = transparent
