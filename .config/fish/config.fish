@@ -4,6 +4,12 @@ if status is-interactive
     alias mime="file --mime"
     alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
     alias ggl=google
+
+    function dotdot
+        echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
+    end
+
+    abbr --add dotdot --regex '^\.\.+$' --function dotdot
 end
 
 set -x GPG_TTY (tty)
