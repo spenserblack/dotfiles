@@ -40,6 +40,7 @@ Plug 'junegunn/limelight.vim'
 Plug 'github/copilot.vim'
 Plug 'gbprod/yanky.nvim'
 Plug 'hachy/eva01.vim'
+Plug 'kvrohit/mellow.nvim'
 
 call plug#end()
 " Display line numbers
