@@ -5,3 +5,4 @@ b-isort: isort (Black)
 yarn0.gitignore: Gitignore (Yarn Zero-Install)
 yarn.gitignore: Gitignore (Yarn Classic)
 yarn.gitattributes: Gitattributes (Yarn)
+build-go-releases.sh: Build Go Releases
