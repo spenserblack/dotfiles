@@ -1,0 +1,12 @@
+#!/bin/sh
+# Usage: randbytes <num-bytes> [dest-file]
+COUNT=$1
+OF=$2
+
+ARGS="if=/dev/urandom bs=1 count=$COUNT"
+
+if [ "$OF" ]; then
+    ARGS="$ARGS of=$OF"
+fi
+
+dd $ARGS
