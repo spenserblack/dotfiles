@@ -41,6 +41,8 @@ Plug 'github/copilot.vim'
 Plug 'gbprod/yanky.nvim'
 Plug 'hachy/eva01.vim'
 Plug 'kvrohit/mellow.nvim'
+Plug 'aktersnurra/no-clown-fiesta.nvim'
+Plug 'olivercederborg/poimandres.nvim'
 
 call plug#end()
 " Display line numbers
