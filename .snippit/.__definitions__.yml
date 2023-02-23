@@ -1,7 +1,7 @@
 ---
 editorconfig: Base EditorConfig
-b-flake8: flake8 (Black)
-b-isort: isort (Black)
+black.flake8: flake8 (Black)
+black.isort.cfg: isort (Black)
 yarn0.gitignore: Gitignore (Yarn Zero-Install)
 yarn.gitignore: Gitignore (Yarn Classic)
 yarn.gitattributes: Gitattributes (Yarn)
