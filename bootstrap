@@ -12,5 +12,6 @@ if [ "$CODESPACES" == true ]; then
 else
 	# Local-specific setup
 	git config --global core.editor nvim
+	git config --global core.cleanup scissors
 	npm config set editor=nvim
 fi
