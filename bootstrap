@@ -1,6 +1,8 @@
 #!/bin/bash
 git config --global alias.recommit '!git commit -eF $(git rev-parse --git-dir)/COMMIT_EDITMSG'
 git config --global grep.lineNumber true
+git config --global core.cleanup scissors
+git config --global blame.ignoreRevsFile .git-blame-ignore-revs
 npm config set git-tag-version=false
 
 if [ "$CODESPACES" == true ]; then
@@ -12,6 +14,5 @@ if [ "$CODESPACES" == true ]; then
 else
 	# Local-specific setup
 	git config --global core.editor nvim
-	git config --global core.cleanup scissors
 	npm config set editor=nvim
 fi
