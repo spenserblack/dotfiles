@@ -3,6 +3,14 @@ git config --global alias.recommit '!git commit -eF $(git rev-parse --git-dir)/C
 git config --global grep.lineNumber true
 git config --global core.cleanup scissors
 git config --global blame.ignoreRevsFile .git-blame-ignore-revs
+
+# NOTE: Set npm to a placeholder command if it's not installed
+if ! command -v npm &> /dev/null; then
+	npm() {
+		echo "npm is not installed"
+	}
+fi
+
 npm config set git-tag-version=false
 
 if [ "$CODESPACES" == true ]; then
