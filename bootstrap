@@ -15,4 +15,6 @@ else
 	# Local-specific setup
 	git config --global core.editor nvim
 	npm config set editor=nvim
+
+	git config --global diff.external difft
 fi
