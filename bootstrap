@@ -24,5 +24,9 @@ else
 	git config --global core.editor nvim
 	npm config set editor=nvim
 
-	git config --global diff.external difft
+	git config --global diff.tool difftastic
+	git config --global difftool.prompt false
+	git config --global difftool.difftastic.cmd 'difft "$LOCAL" "$REMOTE"'
+	git config --global pager.difftool true
+	git config --global alias.dft difftool
 fi
