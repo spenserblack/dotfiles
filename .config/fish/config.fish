@@ -20,3 +20,10 @@ set -x EDITOR nvim
 set -x BROWSER chromium-browser
 set -x GEM_HOME $HOME/.gem
 set -x GEM_PATH $HOME/.gem
+
+# pnpm
+set -gx PNPM_HOME "$HOME/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
