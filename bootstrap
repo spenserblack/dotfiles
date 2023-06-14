@@ -18,7 +18,8 @@ if [ "$CODESPACES" == true ]; then
 	git config --global commit.gpgSign true
 	git config --global tag.gpgSign true
 
-	ln -sf $(pwd)/.bin $HOME/bin
+	ln -sf $(pwd)/bin $HOME/bin
+	ln -sf $(pwd)/.snippit $HOME/.snippit
 else
 	# Local-specific setup
 	git config --global core.editor nvim
