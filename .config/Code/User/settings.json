@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "Ayu Light Bordered",
+    "workbench.iconTheme": "file-icons",
+    "files.autoSave": "afterDelay",
+    "editor.renderWhitespace": "all",
+    "explorer.confirmDelete": false,
+    "files.enableTrash": false,
+    "editor.inlineSuggest.enabled": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 7
+}
