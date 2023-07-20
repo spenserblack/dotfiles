@@ -15,8 +15,12 @@ indent_size = 4
 indent_style = space
 indent_size = 2
 
-[*.{sh,bash,fish}]
+[*.{sh,bash}]
 indent_style = tab
+
+[*.fish]
+indent_style = space
+indent_size = 4
 # }}}
 
 # Compiled Languages {{{
