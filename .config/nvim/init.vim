@@ -75,9 +75,9 @@ let g:indentLine_char =  '┊'
 let g:splitjoin_trailing_comma = 1
 
 syntax on
-set background=dark
+set background=light
 set termguicolors
-colorscheme shine
+colorscheme melange
 let g:gruvbox_contrast_dark = 'soft'
 let g:gruvbox_italic = 1
 
