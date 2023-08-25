@@ -77,7 +77,7 @@ let g:splitjoin_trailing_comma = 1
 syntax on
 set background=dark
 set termguicolors
-colorscheme melange
+colorscheme shine
 let g:gruvbox_contrast_dark = 'soft'
 let g:gruvbox_italic = 1
 
