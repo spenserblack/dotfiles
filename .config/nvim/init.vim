@@ -44,6 +44,7 @@ Plug 'hachy/eva01.vim'
 Plug 'kvrohit/mellow.nvim'
 Plug 'aktersnurra/no-clown-fiesta.nvim'
 Plug 'olivercederborg/poimandres.nvim'
+Plug 'rockerBOO/boo-colorscheme-nvim'
 
 call plug#end()
 " Display line numbers
@@ -77,9 +78,11 @@ let g:splitjoin_trailing_comma = 1
 syntax on
 set background=dark
 set termguicolors
-colorscheme melange
 let g:gruvbox_contrast_dark = 'soft'
 let g:gruvbox_italic = 1
+" Choices: 'sunset_cloud', radioactive_waste', 'forest_stream', 'crimson_moonlight'
+let g:boo_colorscheme_theme = 'crimson_moonlight'
+colorscheme boo
 
 " Detect syntax hightlighting languages on enter
 let g:vue_pre_processors = 'detect_on_enter'
