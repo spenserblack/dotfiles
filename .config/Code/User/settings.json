@@ -7,5 +7,7 @@
     "files.enableTrash": false,
     "editor.inlineSuggest.enabled": true,
     "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.value": 7
+    "workbench.editor.limit.value": 7,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Monaspace Krypton', 'monospace', monospace"
 }
