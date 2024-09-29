@@ -1,0 +1,3 @@
+return {
+    "spenserblack/colorschemecycle.nvim",
+  }
