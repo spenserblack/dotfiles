@@ -7,7 +7,7 @@ vim.opt.mouse = ""
 vim.opt.spell = true
 
 -- show invisible characters
-vim.opt.listchars = { space = ".", tab = ">-", eol = "$" }
+vim.opt.listchars = { space = "·", tab = ">-", eol = "$" }
 vim.opt.list = true
 
 vim.cmd.colorscheme("shine")
