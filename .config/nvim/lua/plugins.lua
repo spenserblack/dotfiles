@@ -1,3 +1,3 @@
 return {
-    "spenserblack/colorschemecycle.nvim",
+    { "spenserblack/colorscheme.nvim", branch = "main" },
   }
