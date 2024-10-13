@@ -1,0 +1,87 @@
+root = true
+
+[*]
+end_of_line = LF
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Scripting languages {{{
+# Batch files
+[*.{bat,cmd}]
+end_of_line = CRLF
+indent_style = tab
+
+# Fish
+[*.fish]
+indent_style = space
+indent_size = 4
+
+# Lua
+[*.lua]
+indent_style = space
+indent_size = 2
+
+# PowerShell
+[*.ps1]
+end_of_line = CRLF
+indent_style = space
+indent_size = 4
+
+# Python
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Ruby
+[*.rb]
+indent_style = space
+indent_size = 2
+
+# Shell
+[*.{sh,bash}]
+indent_style = tab
+# }}}
+
+# Compiled Languages {{{
+# Go
+[*.go]
+indent_style = tab
+
+# Rust
+[*.rs]
+indent_style = space
+indent_size = 4
+# }}}
+
+# Web Languages {{{
+# JavaScript/TypeScript/JSX/TSX/Vue/Svelte
+[*.{js,cjs,mjs,ts,jsx,tsx,vue,svelte}]
+indent_style = space
+indent_size = 2
+
+# Stylesheet
+[*.{css,scss,styl}]
+indent_style = space
+indent_size = 2
+
+# Markup
+[*.{html,pug}]
+indent_style = space
+indent_size = 2
+# }}}
+
+# Data Files {{{
+# JSON
+[*.json]
+indent_style = space
+indent_size = 2
+
+# YAML
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+# }}}
+
+[Makefile]
+indent_style = tab
