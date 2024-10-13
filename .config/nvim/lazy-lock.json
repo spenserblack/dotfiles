@@ -1,0 +1,5 @@
+{
+  "colorscheme.nvim": { "branch": "main", "commit": "a5c66ac337f5d9e8320a5118a24079aafa8c6cea" },
+  "lazy.nvim": { "branch": "main", "commit": "1159bdccd8910a0fd0914b24d6c3d186689023d9" },
+  "nui.nvim": { "branch": "main", "commit": "b58e2bfda5cea347c9d58b7f11cf3012c7b3953f" }
+}
