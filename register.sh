@@ -31,6 +31,7 @@ if grep -q "^$FILENAME$" "$DEST"; then
 	exit 0
 fi
 
+mkdir -p "$(dirname "$DOTFILES/$FILENAME")"
 mv "$HOME/$FILENAME" "$DOTFILES/$FILENAME"
 ln -s "$DOTFILES/$FILENAME" "$HOME/$FILENAME"
 echo "$FILENAME" >> "$DEST"
