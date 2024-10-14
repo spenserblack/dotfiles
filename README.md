@@ -43,7 +43,7 @@ git config --global tag.gpgSign true
 #### Ubuntu
 
 ```shell
-apt install bsdgames cmake colortest dos2unix pass tig
+apt install bsdgames cmake colortest dos2unix git-extras pass tig
 # desktop
 apt install oneko
 # WSL
