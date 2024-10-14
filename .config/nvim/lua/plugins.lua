@@ -1,3 +1,3 @@
 return {
-  { "spenserblack/colorscheme.nvim", branch = "main" },
+  { "spenserblack/colorscheme.nvim", version = "3" },
 }

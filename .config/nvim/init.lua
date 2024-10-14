@@ -10,11 +10,6 @@ vim.opt.spell = true
 vim.opt.listchars = { space = "·", tab = ">-", eol = "$" }
 vim.opt.list = true
 
-vim.cmd.colorscheme("shine")
-
-vim.keymap.set('n', '<C-c><down>', '<cmd>ColorschemeCycle next<cr>')
-vim.keymap.set('n', '<C-c><up>', '<cmd>ColorschemeCycle prev<cr>')
-
 require("colorscheme").setup({
   preferred_dark_colorscheme = "habamax",
   preferred_light_colorscheme = "default",
