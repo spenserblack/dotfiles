@@ -7,6 +7,12 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 # Scripting languages {{{
+# AutoHotkey
+[*.ahk]
+end_of_line = CRLF
+indent_style = space
+indent_size = 4
+
 # Batch files
 [*.{bat,cmd}]
 end_of_line = CRLF
