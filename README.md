@@ -19,6 +19,7 @@ These are optional tasks that I may or may not want to do, so I don't want to sc
   - Add `mislav/gh-license` extension
 - [Install VS Code](https://code.visualstudio.com/)
 - [Install scc](https://github.com/boyter/scc)
+- Import [GitHub's GPG key](https://github.com/web-flow.gpg)
 
 ```shell
 git config --global core.editor nvim
