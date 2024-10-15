@@ -6,7 +6,6 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-# Scripting languages {{{
 # AutoHotkey
 [*.ahk]
 end_of_line = CRLF
@@ -18,21 +17,54 @@ indent_size = 4
 end_of_line = CRLF
 indent_style = tab
 
+# CSS
+[*.css]
+indent_style = space
+indent_size = 2
+
 # Fish
 [*.fish]
 indent_style = space
 indent_size = 4
+
+# Go
+[*.go]
+indent_style = tab
+
+# HTML
+[*.html]
+indent_style = space
+indent_size = 2
+
+# JavaScript
+[*.{js,cjs,mjs,jsx}]
+indent_style = space
+indent_size = 2
+
+# JSON
+[*.json]
+indent_style = space
+indent_size = 2
 
 # Lua
 [*.lua]
 indent_style = space
 indent_size = 2
 
+# Makefile
+[Makefile]
+indent_style = tab
+
 # PowerShell
 [*.ps1]
 end_of_line = CRLF
 indent_style = space
 indent_size = 4
+
+# Pug
+[*.pug]
+indent_style = space
+indent_size = 2
 
 # Python
 [*.py]
@@ -44,42 +76,37 @@ indent_size = 4
 indent_style = space
 indent_size = 2
 
-# Shell
-[*.{sh,bash}]
-indent_style = tab
-# }}}
-
-# Compiled Languages {{{
-# Go
-[*.go]
-indent_style = tab
-
 # Rust
 [*.rs]
 indent_style = space
 indent_size = 4
-# }}}
 
-# Web Languages {{{
-# JavaScript/TypeScript/JSX/TSX/Vue/Svelte
-[*.{js,cjs,mjs,ts,jsx,tsx,vue,svelte}]
+# Sass
+[*.scss]
 indent_style = space
 indent_size = 2
 
-# Stylesheet
-[*.{css,scss,styl}]
+# Shell
+[*.{sh,bash}]
+indent_style = tab
+
+# Stylus
+[*.styl]
 indent_style = space
 indent_size = 2
 
-# Markup
-[*.{html,pug}]
+# Svelte
+[*.svelte]
 indent_style = space
 indent_size = 2
-# }}}
 
-# Data Files {{{
-# JSON
-[*.json]
+# TypeScript
+[*.{ts,tsx}]
+indent_style = space
+indent_size = 2
+
+# Vue
+[*.vue]
 indent_style = space
 indent_size = 2
 
@@ -87,7 +114,3 @@ indent_size = 2
 [*.{yml,yaml}]
 indent_style = space
 indent_size = 2
-# }}}
-
-[Makefile]
-indent_style = tab
