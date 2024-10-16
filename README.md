@@ -21,13 +21,14 @@ These are optional tasks that I may or may not want to do, so I don't want to sc
 - Import [GitHub's GPG key](https://github.com/web-flow.gpg)
 
 ```shell
+git config --global commit.gpgSign true
 git config --global core.editor nvim
 git config --global core.cleanup scissors
 git config --global diff.mnemonicPrefix true
 git config --global grep.lineNumber true
-git config --global commit.gpgSign true
-git config --global tag.gpgSign true
+git config --global push.autoSetupRemote true
 git config --global rebase.autoSquash true
+git config --global tag.gpgSign true
 ```
 
 #### NPM Packages
