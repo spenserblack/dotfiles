@@ -100,6 +100,11 @@ indent_size = 2
 indent_style = space
 indent_size = 2
 
+# TOML
+[*.toml]
+indent_style = space
+indent_size = 4
+
 # TypeScript
 [*.{ts,tsx}]
 indent_style = space
