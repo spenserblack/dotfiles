@@ -19,6 +19,9 @@ These are optional tasks that I may or may not want to do, so I don't want to sc
 - [Install VS Code](https://code.visualstudio.com/)
 - [Install scc](https://github.com/boyter/scc)
 - Import [GitHub's GPG key](https://github.com/web-flow.gpg)
+- Install [A Nerd Font](https://www.nerdfonts.com/font-downloads)
+  - CaskaydiaCove
+  - Monaspice (see [monaspace docs](https://monaspace.githubnext.com/))
 
 ```shell
 git config --global commit.gpgSign true
