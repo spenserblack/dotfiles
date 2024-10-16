@@ -24,9 +24,11 @@ These are optional tasks that I may or may not want to do, so I don't want to sc
 ```shell
 git config --global core.editor nvim
 git config --global core.cleanup scissors
+git config --global diff.mnemonicPrefix true
 git config --global grep.lineNumber true
 git config --global commit.gpgSign true
 git config --global tag.gpgSign true
+git config --global rebase.autoSquash true
 ```
 
 #### NPM Packages
