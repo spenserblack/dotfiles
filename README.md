@@ -9,7 +9,6 @@ These are optional tasks that I may or may not want to do, so I don't want to sc
 - [Install Go](https://go.dev/doc/install)
 - [Install Node.js](https://nodejs.org/en)
   - [Install PNPM](https://pnpm.io/installation)
-  - Add packages `iroiro serve write-good`
 - [Install Python](https://www.python.org/)
 - [Install Rust](https://www.rust-lang.org/learn/get-started)
 - Import/setup GPG key
