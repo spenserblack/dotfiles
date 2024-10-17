@@ -15,7 +15,10 @@ function Bootstrap {
         [string]$Registered
     )
 
-    Get-Content -Path $Registered | ForEach-Object {
+    Get-ChildItem -Path $Registered -File -Recurse | ForEach-Object {
+        $RelativePath = $_.Name
+        $Path = $_.FullName
+        $DestinationPath = "$Destination\$RelativePath"
         $RelativePath = $_
         $Path = "$Dotfiles\$_"
         $DestinationPath = "$Destination\$_"
@@ -41,6 +44,6 @@ function Bootstrap {
     }
 }
 
-Bootstrap -Registered "$Dotfiles/registered.txt"
-Bootstrap -Registered "$Dotfiles/registered-windows.txt"
+Bootstrap -Registered "$Dotfiles/registered/"
+Bootstrap -Registered "$Dotfiles/registered-windows/"
 Write-Output "Bootstrap complete."
