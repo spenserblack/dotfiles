@@ -19,6 +19,7 @@
     "cursor",
     "terminal",
     "terminalfont",
+    "board",
     "cpu",
     "gpu",
     "memory",
