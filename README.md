@@ -6,6 +6,7 @@ These are optional tasks that I may or may not want to do, so I don't want to sc
 
 ### General
 
+- [Install fastfetch](https://github.com/fastfetch-cli/fastfetch)
 - [Install Go](https://go.dev/doc/install)
 - [Install Node.js](https://nodejs.org/en)
   - [Install PNPM](https://pnpm.io/installation)
