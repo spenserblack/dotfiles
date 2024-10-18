@@ -2,35 +2,33 @@
 USAGE="unregister path/to/dotfile"
 SCRIPT_PATH="$(readlink -f $0)"
 DOTFILES="$(dirname "$SCRIPT_PATH")"
-DEST="$DOTFILES/registered$DOTFILES_REGISTERED_SUFFIX.txt"
+SOURCE_FOLDER="$DOTFILES/registered$DOTFILES_REGISTERED_SUFFIX"
 
 if [ $# -ne 1 ]; then
 	echo $USAGE >&2
 	exit 1
 fi
 
-FILENAME="$1"
+DEST="$1"
 # NOTE: Strip $HOME from the beginning of the path
-FILENAME="${FILENAME#$HOME/}"
+RELATIVE_FILENAME="${DEST#$HOME/}"
+SOURCE="$SOURCE_FOLDER/$RELATIVE_FILENAME"
 
-# NOTE: Skip if the file is not registered
-if ! grep -q "^$FILENAME$" "$DEST"; then
-	echo "Not registered: $FILENAME" >&2
+# NOTE: Skip if the file is not in registered
+if [ ! -e "$SOURCE" ]; then
+	echo "File not found in $SOURCE_FOLDER folder: $DEST" >&2
 	exit 1
 fi
 
 # NOTE: If symlink exists in $HOME, remove it and replace it with the original file.
 #		Otherwise, just remove the file.
-if [ -L "$HOME/$FILENAME" ]; then
-	rm "$HOME/$FILENAME"
-	mv "$DOTFILES/$FILENAME" "$HOME/$FILENAME"
+if [ -L "$DEST" ]; then
+	rm "$DEST"
+	mv "$SOURCE" "$DEST"
 else
-	rm "$HOME/$FILENAME"
+	rm "$SOURCE"
 fi
 
-# NOTE: Remove the file from the registered list
-sed -i "\:^$FILENAME\$:d" "$DEST"
-
-git -C "$DOTFILES" add "$DOTFILES/$FILENAME" "$DEST"
-git -C "$DOTFILES" commit -m "Unregister $FILENAME"
-echo "Unregistered: $FILENAME"
+git -C "$DOTFILES" add "$SOURCE"
+git -C "$DOTFILES" commit -m "Unregister $RELATIVE_FILENAME"
+echo "Unregistered: $RELATIVE_FILENAME"

@@ -24,7 +24,7 @@ $Path = $Path -replace "^~", $HOME
 $RelativePath = $Path -replace [regex]::Escape("$HOME\"), ""
 $RelativePath = $RelativePath -replace "\\", "/"
 $Dotfiles = $PSScriptRoot
-$Destination = "$Dotfiles\registered$Suffix.txt"
+$DestinationFolder = "$Dotfiles\registered$Suffix"
 
 function Register {
     param (
@@ -54,23 +54,17 @@ function Register {
     $RelativePath = $RelativePath -replace "\\", "/"
 
     # NOTE: Skip the file if it's already registered
-    if (Select-String -Path $Destination -Pattern "^$RelativePath$") {
+    $DestinationFile = "$DestinationFolder/$RelativePath"
+    if (Test-Path -Path $DestinationFile) {
         Write-Error "Already registered: $RelativePath"
         return
     }
 
     # NOTE: Since Windows doesn't usually have symlinks, we'll just copy the file
-    $Folder = Split-Path -Path "$Dotfiles/$RelativePath" -Parent
-    if (-not (Test-Path -Path $Folder)) {
-        New-Item -ItemType Directory -Path $Folder
-    }
-    Copy-Item -Recurse -Path "$Path" -Destination "$Dotfiles/$RelativePath"
-    Add-Content -Path "$Destination" -Value "$RelativePath"
-    Get-Content -Path "$Destination" | Sort-Object | Set-Content -Path "$Destination"
-    git.exe -C "$Dotfiles" add "$Dotfiles/$RelativePath"
+    Copy-Item -Recurse -Path "$Path" -Destination "$DestinationFile"
+    git.exe -C "$Dotfiles" add "$DestinationFile"
 }
 
 Register -Path $Path
 
-git.exe -C "$Dotfiles" add "$Destination"
 git.exe -C "$Dotfiles" commit -m "Register $RelativePath"

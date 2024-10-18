@@ -2,7 +2,7 @@
 USAGE="register path/to/dotfile"
 SCRIPT_PATH="$(readlink -f $0)"
 DOTFILES="$(dirname "$SCRIPT_PATH")"
-DEST="$DOTFILES/registered$DOTFILES_REGISTERED_SUFFIX.txt"
+DEST_FOLDER="$DOTFILES/registered$DOTFILES_REGISTERED_SUFFIX"
 
 if [ $# -ne 1 ]; then
 	echo $USAGE >&2
@@ -21,21 +21,20 @@ if [ ! -f "$1" ]; then
 	exit 1
 fi
 
-FILENAME="$1"
+SOURCE="$1"
 # NOTE: Strip $HOME from the beginning of the path
-FILENAME="${FILENAME#$HOME/}"
+RELATIVE_FILENAME="${SOURCE#$HOME/}"
+DEST="$DEST_FOLDER/$RELATIVE_FILENAME"
 
-# NOTE: Skip if the file is already registered
-if grep -q "^$FILENAME$" "$DEST"; then
-	echo "Already registered: $FILENAME" >&2
+# If dest exists, skip
+if [ -e "$DEST" ]; then
+	echo "$DEST exists: skipping $SOURCE" >&2
 	exit 0
 fi
 
-mkdir -p "$(dirname "$DOTFILES/$FILENAME")"
-mv "$HOME/$FILENAME" "$DOTFILES/$FILENAME"
-ln -s "$DOTFILES/$FILENAME" "$HOME/$FILENAME"
-echo "$FILENAME" >> "$DEST"
-sort -o "$DEST" "$DEST"
-git -C "$DOTFILES" add "$DOTFILES/$FILENAME" "$DEST"
-git -C "$DOTFILES" commit -m "Register $FILENAME"
-echo "Registered: $FILENAME"
+mkdir -p "$(dirname "$DOTFILES/$RELATIVE_FILENAME")"
+mv "$SOURCE" "$DEST"
+ln -s "$DEST" "$SOURCE"
+git -C "$DOTFILES" add "$DEST"
+git -C "$DOTFILES" commit -m "Register $RELATIVE_FILENAME"
+echo "Registered: $RELATIVE_FILENAME"

@@ -15,10 +15,14 @@ function Bootstrap {
         [string]$Registered
     )
 
-    Get-Content -Path $Registered | ForEach-Object {
-        $RelativePath = $_
-        $Path = "$Dotfiles\$_"
-        $DestinationPath = "$Destination\$_"
+    Get-ChildItem -Path $Registered -File -Recurse | ForEach-Object {
+        $Path = $_.FullName
+        $RelativePath = $Path -replace [regex]::Escape("$Registered\"), ""
+        $DestinationPath = "$Destination\$RelativePath"
+
+        if ($_.Name -eq ".gitkeep") {
+            return
+        }
 
         # If the file already exists in the home directory, skip it.
         if (Test-Path -Path $DestinationPath) {
@@ -41,6 +45,6 @@ function Bootstrap {
     }
 }
 
-Bootstrap -Registered "$Dotfiles/registered.txt"
-Bootstrap -Registered "$Dotfiles/registered-windows.txt"
+Bootstrap -Registered "$Dotfiles\registered"
+Bootstrap -Registered "$Dotfiles\registered-windows"
 Write-Output "Bootstrap complete."
