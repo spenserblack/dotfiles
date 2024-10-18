@@ -20,4 +20,5 @@ require("colorscheme").setup({
   preferred_dark_colorscheme = "habamax",
   preferred_light_colorscheme = "default",
   theme_mode = "system",
+  theme_mode_fallback = "dark",
 })
