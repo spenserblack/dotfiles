@@ -41,8 +41,8 @@ indent_size = 2
 indent_style = space
 indent_size = 2
 
-# JSON
-[*.json]
+# JSON (and with comments)
+[*.{json,jsonc}]
 indent_style = space
 indent_size = 2
 
