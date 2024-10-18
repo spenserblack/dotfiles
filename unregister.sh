@@ -11,7 +11,7 @@ fi
 
 DEST="$1"
 # NOTE: Strip $HOME from the beginning of the path
-RELATIVE_FILENAME="${FILENAME#$HOME/}"
+RELATIVE_FILENAME="${DEST#$HOME/}"
 SOURCE="$SOURCE_FOLDER/$RELATIVE_FILENAME"
 
 # NOTE: Skip if the file is not in registered
