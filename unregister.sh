@@ -26,7 +26,7 @@ if [ -L "$DEST" ]; then
 	rm "$DEST"
 	mv "$SOURCE" "$DEST"
 else
-	rm "$DEST"
+	rm "$SOURCE"
 fi
 
 git -C "$DOTFILES" add "$SOURCE"
