@@ -110,6 +110,14 @@ indent_size = 4
 indent_style = space
 indent_size = 2
 
+# Vimscript
+[.vimrc]
+indent_style = space
+indent_size = 2
+[*.vim]
+indent_style = space
+indent_size = 2
+
 # Vue
 [*.vue]
 indent_style = space
