@@ -32,7 +32,7 @@ if [ -e "$DEST" ]; then
 	exit 0
 fi
 
-mkdir -p "$(dirname "$DOTFILES/$RELATIVE_FILENAME")"
+mkdir -p "$(dirname "$DEST")"
 mv "$SOURCE" "$DEST"
 ln -s "$DEST" "$SOURCE"
 git -C "$DOTFILES" add "$DEST"
