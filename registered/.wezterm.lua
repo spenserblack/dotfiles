@@ -4,13 +4,17 @@ local config = wezterm.config_builder()
 
 local dark_theme = "Ayu Mirage (Gogh)"
 local light_theme = "dawnfox"
+local appearance_themes = {
+  Light = light_theme,
+  Dark = dark_theme,
+}
 local next_theme = {
   [dark_theme] = light_theme,
   [light_theme] = dark_theme,
 }
 
--- NOTE: Can use target triple to get OS, from OS get preferred theme.
-config.color_scheme = dark_theme
+local appearance = wezterm.gui.get_appearance()
+config.color_scheme = appearance_themes[appearance] or dark_theme
 
 config.window_background_opacity = 0.9
 
