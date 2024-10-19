@@ -2,7 +2,6 @@ require("config.lazy")
 require("lazy").setup("plugins")
 vim.opt.title = true
 vim.opt.number = true
-vim.opt.wrap = false
 vim.opt.mouse = ""
 vim.opt.spell = true
 
