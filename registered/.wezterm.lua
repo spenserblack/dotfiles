@@ -16,7 +16,7 @@ local next_theme = {
 local appearance = wezterm.gui.get_appearance()
 config.color_scheme = appearance_themes[appearance] or dark_theme
 
-config.window_background_opacity = 0.9
+config.window_background_opacity = 0.85
 
 config.leader = { key = "k", mods = "CTRL", timeout_milliseconds = 5000 }
 config.keys = {
