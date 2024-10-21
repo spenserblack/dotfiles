@@ -15,9 +15,13 @@ vim.opt.wrap = false
 vim.opt.linebreak = true
 vim.keymap.set({'i', 'n'}, '<M-z>', function() vim.opt.wrap = not vim.o.wrap end)
 
+require("colorscheme").add_dark_colorscheme("rose-pine-main")
+require("colorscheme").add_dark_colorscheme("rose-pine-moon")
+require("colorscheme").add_light_colorscheme("rose-pine-dawn")
+
 require("colorscheme").setup({
-  preferred_dark_colorscheme = "habamax",
-  preferred_light_colorscheme = "default",
+  preferred_dark_colorscheme = "rose-pine-moon",
+  preferred_light_colorscheme = "rose-pine-dawn",
   theme_mode = "system",
   theme_mode_fallback = "dark",
 })

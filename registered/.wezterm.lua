@@ -2,8 +2,8 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
-local dark_theme = "Ayu Mirage (Gogh)"
-local light_theme = "Github (base16)"
+local dark_theme = "rose-pine-moon"
+local light_theme = "rose-pine-dawn"
 local appearance_themes = {
   Light = light_theme,
   Dark = dark_theme,
