@@ -60,6 +60,7 @@ apt install wslu
 
 ### Windows
 
+- Install [AutoHotkey](https://www.autohotkey.com/)
 - Install WSL
 - [Install Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)
 - [Install PowerShell](https://github.com/powershell/PowerShell)
