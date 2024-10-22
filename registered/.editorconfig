@@ -89,6 +89,9 @@ indent_size = 2
 # Shell
 [*.{sh,bash}]
 indent_style = tab
+[.profile]
+indent_style = space
+indent_size = 4
 
 # Stylus
 [*.styl]
