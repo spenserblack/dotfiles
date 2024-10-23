@@ -36,6 +36,33 @@ git config --global rebase.autoSquash true
 git config --global tag.gpgSign true
 ```
 
+#### APT Packages
+
+- `bsdgames` (includes the handy program `wtf`)
+- `cmake`
+- `colortest`
+- `dos2unix`
+- `git-extras`
+- `highlight`
+- `jq`
+- `pass`
+- `ranger`
+- `tig`
+
+##### Desktop
+
+- `oneko`
+
+##### WSL
+
+- `wslu`
+
+#### Cargo Crates
+
+- `gengo-bin`
+- `onefetch`
+- `viu`
+
 #### NPM Packages
 
 - `iroiro`
@@ -47,16 +74,6 @@ git config --global tag.gpgSign true
 - [Install Docker Engine](https://docs.docker.com/engine/install/)
 - [Install direnv](https://direnv.net/)
 - [Install `textimg`](https://github.com/jiro4989/textimg)
-
-#### Ubuntu
-
-```shell
-apt install bsdgames cmake colortest dos2unix git-extras highlight jq pass ranger tig
-# desktop
-apt install oneko
-# WSL
-apt install wslu
-```
 
 ### Windows
 
