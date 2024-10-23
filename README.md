@@ -51,7 +51,7 @@ git config --global tag.gpgSign true
 #### Ubuntu
 
 ```shell
-apt install bsdgames cmake colortest dos2unix git-extras highlight pass ranger tig
+apt install bsdgames cmake colortest dos2unix git-extras highlight jq pass ranger tig
 # desktop
 apt install oneko
 # WSL
