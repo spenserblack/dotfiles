@@ -2,7 +2,7 @@
 
 Clone this repository and run the appropriate `bootstrap.*` script.
 
-## Manual setup
+## Extra (manual) setup
 
 These are optional tasks that I may or may not want to do, so I don't want to script them, but I'm documenting so that I can remember them.
 
