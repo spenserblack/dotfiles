@@ -38,7 +38,7 @@ git config --global rebase.autoSquash true
 git config --global tag.gpgSign true
 ```
 
-#### APT Packages
+#### APT Packages (`sudo apt install`)
 
 - `bsdgames` (includes the handy program `wtf`)
 - `cmake`
@@ -59,19 +59,19 @@ git config --global tag.gpgSign true
 
 - `wslu`
 
-#### Cargo Crates
+#### Cargo Crates (`cargo install [--locked]`)
 
 - `gengo-bin`
 - `onefetch`
 - `viu`
 
-#### NPM Packages
+#### NPM Packages (`npm install -g` or `pnpm add -g`)
 
 - `iroiro`
 - `serve`
 - `write-good`
 
-#### Ruby Gems
+#### Ruby Gems (`gem install`)
 
 - [`github-linguist`](https://github.com/github-linguist/linguist)
 - [`katakata_irb`](https://github.com/tompng/katakata_irb)
