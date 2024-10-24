@@ -25,3 +25,7 @@ require("colorscheme").setup({
   theme_mode = "system",
   theme_mode_fallback = "dark",
 })
+
+-- As long as the terminal theme and the colorscheme match, a transparent background
+-- should look good.
+vim.cmd.highlight("Normal ctermbg=NONE guibg=NONE")
