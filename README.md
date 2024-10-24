@@ -49,6 +49,8 @@ git config --global tag.gpgSign true
 - `jq`
 - `pass`
 - `ranger`
+- `ruby`
+- `ruby-dev`
 - `tig`
 
 ##### Desktop
