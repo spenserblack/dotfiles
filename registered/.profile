@@ -53,4 +53,8 @@ if [ "$(which firefox)" ] ; then
 fi
 if [ "$(which nvim)" ] ; then
     export EDITOR="nvim"
+elif [ "$(which vim)" ] ; then
+    export EDITOR="vim"
+else
+    export EDITOR="vi"
 fi
