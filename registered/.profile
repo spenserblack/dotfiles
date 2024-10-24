@@ -39,6 +39,11 @@ if [ -d "$HOME/go/bin" ] ; then
     PATH="$PATH:$HOME/go/bin"
 fi
 
+if [ "$(which ruby)" ] ; then
+    export GEM_HOME="$HOME/.gem/$(ruby -e "puts RUBY_VERSION.split('.').first(2).join('.')")"
+    PATH="$GEM_HOME/bin:$PATH"
+fi
+
 . "$HOME/.cargo/env"
 
 export BROWSER="firefox"
