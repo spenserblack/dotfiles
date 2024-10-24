@@ -32,6 +32,7 @@ git config --global core.editor nvim
 git config --global core.cleanup scissors
 git config --global diff.mnemonicPrefix true
 git config --global grep.lineNumber true
+git config --global init.defaultBranch main
 git config --global push.autoSetupRemote true
 git config --global rebase.autoSquash true
 git config --global tag.gpgSign true
