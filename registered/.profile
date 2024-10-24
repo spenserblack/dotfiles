@@ -48,5 +48,9 @@ if [ -e "/home/linuxbrew/.linuxbrew/bin/brew" ] ; then
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
-export BROWSER="firefox"
-export EDITOR="nvim"
+if [ "$(which firefox)" ] ; then
+    export BROWSER="firefox"
+fi
+if [ "$(which nvim)" ] ; then
+    export EDITOR="nvim"
+fi
