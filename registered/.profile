@@ -31,12 +31,10 @@ if [ -d "/opt/nvim-linux64/bin" ] ; then
 fi
 
 if [ -d "/usr/local/go/bin" ] ; then
-    export PATH="/usr/local/go/bin:$PATH"
-fi
-
-# set PATH so it includes user's installed executable go mods if they exist
-if [ -d "$HOME/go/bin" ] ; then
-    PATH="$PATH:$HOME/go/bin"
+    PATH="/usr/local/go/bin:$PATH"
+    eval "$(go env)"
+    PATH="$GOBIN:$PATH"
+    PATH="$GOPATH/bin:$PATH"
 fi
 
 if [ "$(which ruby)" ] ; then
