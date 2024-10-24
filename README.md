@@ -20,7 +20,6 @@ These are optional tasks that I may or may not want to do, so I don't want to sc
 - [Install GitHub CLI](https://github.com/cli/cli)
   - Add `mislav/gh-license` extension
 - [Install VS Code](https://code.visualstudio.com/)
-- [Install scc](https://github.com/boyter/scc)
 - Import [GitHub's GPG key](https://github.com/web-flow.gpg)
 - Install [A Nerd Font](https://www.nerdfonts.com/font-downloads)
   - CaskaydiaCove
@@ -66,6 +65,10 @@ git config --global tag.gpgSign true
 - `gengo-bin`
 - `onefetch`
 - `viu`
+
+#### Go Modules (`go install`)
+
+- [`github.com/boyter/scc/v3@latest`](https://github.com/boyter/scc) (click link for other installation methods)
 
 #### NPM Packages (`npm install -g` or `pnpm add -g`)
 
