@@ -44,5 +44,9 @@ fi
 
 . "$HOME/.cargo/env"
 
+if [ -e "/home/linuxbrew/.linuxbrew/bin/brew" ] ; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
 export BROWSER="firefox"
 export EDITOR="nvim"
