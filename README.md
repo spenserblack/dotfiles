@@ -69,6 +69,11 @@ git config --global tag.gpgSign true
 - `serve`
 - `write-good`
 
+#### Ruby Gems
+
+- [`github-linguist`](https://github.com/github-linguist/linguist)
+- [`katakata_irb`](https://github.com/tompng/katakata_irb)
+
 ### Linux
 
 - [Install Docker Engine](https://docs.docker.com/engine/install/)
