@@ -24,7 +24,7 @@ These are optional tasks that I may or may not want to do, so I don't want to sc
 - Install [A Nerd Font](https://www.nerdfonts.com/font-downloads)
   - CaskaydiaCove
   - Monaspice (see [monaspace docs](https://monaspace.githubnext.com/))
-- Install [wezterm](https://github.com/wez/wezterm)
+- Install [WezTerm](https://github.com/wez/wezterm)
 
 ```shell
 git config --global commit.gpgSign true
