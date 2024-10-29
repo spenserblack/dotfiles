@@ -22,6 +22,9 @@ zstyle ':vcs_info:git:*' formats '%# %b'
 setopt prompt_subst
 PROMPT='%~${vcs_info_msg_0_}%# '
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
 alias ls='ls --color=auto'
 alias diff='diff -su --color=auto'
 alias mime='file --mime-type'
