@@ -98,6 +98,9 @@ indent_size = 4
 [*.zsh]
 indent_style = space
 indent_size = 2
+[.zprofile]
+indent_style = space
+indent_size = 2
 [.zshrc]
 indent_style = space
 indent_size = 2
