@@ -42,7 +42,9 @@ if [ "$(which ruby)" ] ; then
     PATH="$GEM_HOME/bin:$PATH"
 fi
 
-. "$HOME/.cargo/env"
+if [ -e "$HOME/.cargo/env" ] ; then
+    . "$HOME/.cargo/env"
+fi
 
 if [ -e "/home/linuxbrew/.linuxbrew/bin/brew" ] ; then
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
