@@ -14,3 +14,10 @@ zstyle :compinstall filename "$HOME/.zshrc"
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats ' :%b:'
+
+setopt prompt_subst
+PROMPT='%~${vcs_info_msg_0_}%# '
