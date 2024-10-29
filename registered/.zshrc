@@ -21,3 +21,8 @@ zstyle ':vcs_info:git:*' formats '%# %b'
 
 setopt prompt_subst
 PROMPT='%~${vcs_info_msg_0_}%# '
+
+alias ls='ls --color=auto'
+alias diff='diff -su --color=auto'
+alias mime='file --mime-type'
+alias nv=nvim
