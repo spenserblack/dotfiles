@@ -37,6 +37,14 @@ if [ -d "/usr/local/go/bin" ] ; then
     PATH="$GOPATH/bin:$PATH"
 fi
 
+export PNPM_HOME="$HOME/.local/share/pnpm"
+if [[ -d "$PNPM_HOME" ]]; then
+    case ":$PATH:" in
+        *":$PNPM_HOME:"*) ;;
+        *) export PATH="$PNPM_HOME:$PATH" ;;
+    esac
+fi
+
 if [ "$(which ruby)" ] ; then
     export GEM_HOME="$HOME/.gem/$(ruby -e "puts RUBY_VERSION.split('.').first(2).join('.')")"
     PATH="$GEM_HOME/bin:$PATH"
