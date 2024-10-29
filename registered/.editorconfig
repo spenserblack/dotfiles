@@ -95,6 +95,12 @@ indent_style = tab
 [.profile]
 indent_style = space
 indent_size = 4
+[*.zsh]
+indent_style = space
+indent_size = 2
+[.zshrc]
+indent_style = space
+indent_size = 2
 
 # Stylus
 [*.styl]

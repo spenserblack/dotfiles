@@ -5,6 +5,9 @@ SAVEHIST=1000
 unsetopt autocd beep extendedglob nomatch notify
 bindkey -v
 # End of lines configured by zsh-newuser-install
+
+fpath=(~/.zsh_completions $fpath)
+
 # The following lines were added by compinstall
 zstyle :compinstall filename "$HOME/.zshrc"
 
