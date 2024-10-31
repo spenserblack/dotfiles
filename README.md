@@ -40,6 +40,7 @@ git config --global tag.gpgSign true
 
 #### APT Packages (`sudo apt install`)
 
+- `7zip`
 - `bsdgames` (includes the handy program `wtf`)
 - `cmake`
 - `colortest`
@@ -66,6 +67,7 @@ git config --global tag.gpgSign true
 - `gengo-bin`
 - `onefetch`
 - `viu`
+- [`yazi-fm` and `yazi-cli`](https://yazi-rs.github.io/docs/installation) (click link for other installation methods and optional dependencies)
 
 #### Go Modules (`go install`)
 
