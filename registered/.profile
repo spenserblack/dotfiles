@@ -45,6 +45,10 @@ if [[ -d "$PNPM_HOME" ]]; then
     esac
 fi
 
+if [ -d "/usr/local/odin" ] ; then
+    PATH="/usr/local/odin:$PATH"
+fi
+
 if [ "$(which ruby)" ] ; then
     export GEM_HOME="$HOME/.gem/$(ruby -e "puts RUBY_VERSION.split('.').first(2).join('.')")"
     PATH="$GEM_HOME/bin:$PATH"
