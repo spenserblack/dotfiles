@@ -1,0 +1,7 @@
+[manager]
+linemode    = "size"
+show_hidden = true
+sort_by     = "natural"
+
+[preview]
+tab_size = 4
