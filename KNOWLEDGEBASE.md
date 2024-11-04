@@ -2,6 +2,12 @@
 
 Various links and notes for basic knowledge.
 
+## Any OS
+
+### Zsh
+
+- list keybindings with `bindkey -L`
+
 ## Windows
 
 ### AutoHotkey
