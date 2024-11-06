@@ -75,6 +75,7 @@ git config --global tag.gpgSign true
 
 #### NPM Packages (`npm install -g` or `pnpm add -g`)
 
+- [`cspell`](https://github.com/streetsidesoftware/cspell)
 - `iroiro`
 - `serve`
 - `write-good`
