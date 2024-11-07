@@ -18,7 +18,7 @@ compinit
 
 autoload -Uz vcs_info
 precmd() { vcs_info }
-zstyle ':vcs_info:git:*' formats '%# %b'
+zstyle ':vcs_info:git:*' formats ' %b'
 
 setopt prompt_subst
 PROMPT='%~${vcs_info_msg_0_}%# '
