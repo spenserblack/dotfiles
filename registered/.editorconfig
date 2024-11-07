@@ -55,6 +55,11 @@ indent_size = 2
 [Makefile]
 indent_style = tab
 
+# Nushell
+[*.nu]
+indent_style = space
+indent_size = 4
+
 # PowerShell
 [*.ps1]
 end_of_line = CRLF
