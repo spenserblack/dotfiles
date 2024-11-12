@@ -1,0 +1,5 @@
+# vim:ft=conf
+set hidden true
+set icons true
+set info "size"
+set number true

@@ -1,0 +1,96 @@
+# vim:ft=conf
+# See https://github.com/gokcehan/lf/blob/4fefcf7aac02535e651b3d29ec02f9fb72576b6d/etc/icons.example for more info
+
+ln		# LINK
+or		# ORPHAN
+tw	t	# STICKY_OTHER_WRITABLE
+ow		# OTHER_WRITABLE
+st	t	# STICKY
+di		# DIR
+pi	p	# FIFO
+so	s	# SOCK
+bd	b	# BLK
+cd	c	# CHR
+su	u	# SETUID
+sg	g	# SETGID
+ex		# EXEC
+fi		# FILE
+
+# Batch file
+*.bat	
+*.cmd	
+
+# CSS
+*.css	
+
+# EditorConfig
+*.editorconfig	
+
+# Git Files
+*.gitattributes		
+*.gitignore		
+*.gitkeep		
+*.gitmodules		
+*.git-blame-ignore-revs	
+
+# GitHub
+*.github	
+
+# Go
+*.go	
+
+# HTML
+*.html	
+
+# JavaScript
+*.cjs	
+*.js	
+*.mjs	
+
+# Lua
+*.lua	
+
+# Markdown
+*.md		
+*.markdown	
+
+# PowerShell
+*.ps1	
+
+# Python
+*.py	
+
+# Ruby
+*Gemfile	
+*.irbrc		
+*.rb		
+
+# Rust
+*.rs	
+
+# SASS
+*.sass	
+*.scss	
+
+# Shell
+*.bash		
+*.bash_aliases	
+*.bashrc	
+*.profile	
+*.sh		
+*.zsh		
+*.zshrc		
+*.zprofile	
+
+# Svelte
+*.svelte	
+
+# TypeScript
+*.ts	󰛦
+
+# Vim
+*.vim	
+*.vimrc	
+
+# Vue.js
+*.vue	
