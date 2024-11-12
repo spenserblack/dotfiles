@@ -71,7 +71,8 @@ git config --global tag.gpgSign true
 
 #### Go Modules (`go install`)
 
-- [`github.com/boyter/scc/v3@latest`](https://github.com/boyter/scc) (click link for other installation methods)
+- [`https://github.com/gokcehan/lf`](https://github.com/gokcehan/lf)
+- [`github.com/boyter/scc/v3@latest`](https://github.com/boyter/scc)
 
 #### NPM Packages (`npm install -g` or `pnpm add -g`)
 
