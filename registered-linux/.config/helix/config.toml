@@ -1,0 +1,35 @@
+theme = "rose_pine_moon"
+
+[editor]
+color-modes = true
+cursorline = true
+mouse = false
+
+[editor.file-picker]
+hidden = true
+
+[editor.statusline]
+left = [
+    "mode",
+    "spinner",
+    "spacer",
+    "version-control",
+    "spacer",
+    "file-name",
+    "read-only-indicator",
+    "file-modification-indicator",
+    "separator",
+]
+right = [
+    "separator",
+    "diagnostics",
+    "selections",
+    "register",
+    "position",
+    "file-type",
+    "file-line-ending",
+    "file-encoding",
+]
+
+[editor.whitespace]
+render = "all"
