@@ -62,9 +62,12 @@ if [ -e "/home/linuxbrew/.linuxbrew/bin/brew" ] ; then
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
-if command -v firefox &> /dev/null; then
+if [ -n "$WSL_DISTRO_NAME" ]; then
+    export BROWSER="wslview"
+elif command -v firefox &> /dev/null; then
     export BROWSER="firefox"
 fi
+
 if command -v nvim &> /dev/null; then
     export EDITOR="nvim"
 elif command -v vim &> /dev/null; then
