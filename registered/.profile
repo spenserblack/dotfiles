@@ -62,12 +62,12 @@ if [ -e "/home/linuxbrew/.linuxbrew/bin/brew" ] ; then
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
-if [ "$(which firefox)" ] ; then
+if command -v firefox &> /dev/null; then
     export BROWSER="firefox"
 fi
-if [ "$(which nvim)" ] ; then
+if command -v nvim &> /dev/null; then
     export EDITOR="nvim"
-elif [ "$(which vim)" ] ; then
+elif command -v vim &> /dev/null; then
     export EDITOR="vim"
 else
     export EDITOR="vi"
