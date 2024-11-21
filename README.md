@@ -73,6 +73,7 @@ git config --global tag.gpgSign true
 
 - [`https://github.com/gokcehan/lf`](https://github.com/gokcehan/lf)
 - [`github.com/boyter/scc/v3@latest`](https://github.com/boyter/scc)
+- [`github.com/spenserblack/nf-cli@latest`](https://github.com/spenserblack/nf-cli)
 
 #### NPM Packages (`npm install -g` or `pnpm add -g`)
 
