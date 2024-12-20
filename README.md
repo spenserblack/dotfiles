@@ -85,7 +85,7 @@ git config --global tag.gpgSign true
 #### Ruby Gems (`gem install`)
 
 - [`github-linguist`](https://github.com/github-linguist/linguist)
-- [`katakata_irb`](https://github.com/tompng/katakata_irb)
+- [`repl_type_completor`](https://github.com/ruby/repl_type_completor/)
 
 ### Linux
 
