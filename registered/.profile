@@ -49,7 +49,7 @@ if [ -d "/usr/local/odin" ] ; then
     PATH="/usr/local/odin:$PATH"
 fi
 
-if [ "$(which ruby)" ] ; then
+if command -v ruby &> /dev/null; then
     export GEM_HOME="$HOME/.gem/$(ruby -e "puts RUBY_VERSION.split('.').first(2).join('.')")"
     PATH="$GEM_HOME/bin:$PATH"
 fi
