@@ -5,26 +5,26 @@
     Register a file for the dotfiles repository.
 .PARAMETER Path
     The path to the file to register.
-.PARAMETER Suffix
-    The suffix to append to the registered file.
+.PARAMETER DotFolder
+    The name of the folder containing the dotfiles.
 .EXAMPLE
     register.ps1 -Path $Profile
 .EXAMPLE
-    register.ps1 -Path $Profile -Suffix Profile
+    register.ps1 -Path $Profile DotFolder .windows
 #>
 
 param (
     [Parameter(Mandatory = $true)]
     [string]$Path,
 
-    [string]$Suffix = ""
+    [string]$DotFolder = ".all"
 )
 
 $Path = $Path -replace "^~", $HOME
 $RelativePath = $Path -replace [regex]::Escape("$HOME\"), ""
 $RelativePath = $RelativePath -replace "\\", "/"
 $Dotfiles = $PSScriptRoot
-$DestinationFolder = "$Dotfiles\registered$Suffix"
+$DestinationFolder = "$Dotfiles\$DotFolder"
 
 function Register {
     param (

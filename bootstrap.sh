@@ -38,7 +38,7 @@ create_symlinks() {
 	done
 }
 
-create_symlinks "$DOTFILES/registered"
-create_symlinks "$DOTFILES/registered-linux"
+create_symlinks "$DOTFILES/.all"
+create_symlinks "$DOTFILES/.linux"
 
 echo "Bootstrap complete"

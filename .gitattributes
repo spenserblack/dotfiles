@@ -1,4 +1,6 @@
-registered/* linguist-detectable
-registered/**/* linguist-detectable
-registered-*/* linguist-detectable
-registered-*/**/* linguist-detectable
+.all/* linguist-detectable
+.all/**/* linguist-detectable
+.linux/* linguist-detectable
+.linux/**/* linguist-detectable
+.windows/* linguist-detectable
+.windows/**/* linguist-detectable

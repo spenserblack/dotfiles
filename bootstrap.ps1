@@ -45,6 +45,6 @@ function Bootstrap {
     }
 }
 
-Bootstrap -Registered "$Dotfiles\registered"
-Bootstrap -Registered "$Dotfiles\registered-windows"
+Bootstrap -Registered "$Dotfiles\.all"
+Bootstrap -Registered "$Dotfiles\.windows"
 Write-Output "Bootstrap complete."

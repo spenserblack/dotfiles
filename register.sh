@@ -2,7 +2,8 @@
 USAGE="register path/to/dotfile"
 SCRIPT_PATH="$(readlink -f $0)"
 DOTFILES="$(dirname "$SCRIPT_PATH")"
-DEST_FOLDER="$DOTFILES/registered$DOTFILES_REGISTERED_SUFFIX"
+DOT_FOLDER="${DOT_FOLDER:-.all}"
+DEST_FOLDER="$DOTFILES/$DOT_FOLDER"
 
 if [ $# -ne 1 ]; then
 	echo $USAGE >&2
