@@ -7,8 +7,6 @@
 $Dotfiles = $PSScriptRoot
 $Destination = $HOME
 
-# For each filename in registered.txt and registered-windows.txt, copy the file
-# to the home directory.
 function Bootstrap {
     param (
         [Parameter(Mandatory = $true)]
