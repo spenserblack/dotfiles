@@ -104,6 +104,10 @@ fi		# FILE
 *.md		
 *.markdown	
 
+# Node.js
+*.node-version	
+*.nvmrc		
+
 # NPM/Yarn/PNPM
 *.npmrc			
 *package.json			
@@ -122,10 +126,14 @@ fi		# FILE
 # Python
 *.py	
 
-# Ruby
+# Ruby (on Rails)
+*.ruby-version	
+*config.ru	
 *Gemfile	
+*Gemfile.lock	
 *Rakefile	
 *.gemspec	
+*.erb		
 *.irbrc		
 *.rb		
 
