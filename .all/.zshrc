@@ -26,8 +26,8 @@ PROMPT='%~${vcs_info_msg_0_}%# '
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-bindkey "[1;5D" backward-word
-bindkey "[1;5C" forward-word
+bindkey "\e[1;5D" backward-word
+bindkey "\e[1;5C" forward-word
 
 alias ls='ls --color=auto'
 alias diff='diff -su --color=auto'
