@@ -16,28 +16,71 @@ sg	g	# SETGID
 ex		# EXEC
 fi		# FILE
 
+# All Contributors
+*.all-contributorsrc	
+
 # Batch file
 *.bat	
 *.cmd	
 
+# CODEOWNERS
+*CODEOWNERS	󰁥
+
+# Config file
+*.flake8	
+*.inputrc	
+*.cfg		
+
 # CSS
 *.css	
+
+# Devcontainers
+*.devcontainer.json	
+*devcontainer.json	
+
+# Direnv
+*.envrc	
+
+# Docker
+*.dockerignore	󰡨
+*Dockerfile	󰡨
+
+# Documentation
+*CODE_OF_CONDUCT.md	
+*CONTRIBUTING.md	
+*LICENSE		
+*LICENSE-APACHE		
+*LICENSE-MIT		
+*README.md		
+*README			
+
+# Dotenv
+*.env		
+*.env.example	
 
 # EditorConfig
 *.editorconfig	
 
 # Git Files
 *.gitattributes		
+*.gitconfig		
 *.gitignore		
 *.gitkeep		
 *.gitmodules		
 *.git-blame-ignore-revs	
+*.mailmap		
 
 # GitHub
 *.github	
 
 # Go
-*.go	
+*.go		
+*go.mod		
+*go.sum		
+*go.work	
+
+# Homebrew
+*Brewfile	󰂘
 
 # HTML
 *.html	
@@ -47,36 +90,60 @@ fi		# FILE
 *.js	
 *.mjs	
 
+# JSON
+*.json	
+*.jsonc	
+
 # Lua
 *.lua	
+
+# Makefile
+*Makefile	
 
 # Markdown
 *.md		
 *.markdown	
 
+# NPM/Yarn/PNPM
+*.npmrc			
+*package.json			
+*package-lock.json		
+*pnpm-lock.yaml			
+*pnpm-workspace.yaml		
+*yarn.lock			
+
 # PowerShell
 *.ps1	
+
+# Prettier
+*.prettierignore	
+*.prettierrc.json	
 
 # Python
 *.py	
 
 # Ruby
 *Gemfile	
+*Rakefile	
+*.gemspec	
 *.irbrc		
 *.rb		
 
 # Rust
-*.rs	
+*Cargo.toml	
+*Cargo.lock	
+*.rs		
 
 # SASS
 *.sass	
 *.scss	
 
 # Shell
-*.bash		
 *.bash_aliases	
 *.bashrc	
 *.profile	
+*.bash		
+*.nu		
 *.sh		
 *.zsh		
 *.zshrc		
@@ -85,8 +152,20 @@ fi		# FILE
 # Svelte
 *.svelte	
 
+# TODO
+*TODO		
+*TODO.md	
+*TODO.txt	
+
+# TOML
+*.toml	
+
 # TypeScript
-*.ts	󰛦
+*.ts			󰛦
+*tsconfig.json		󰛦
+*tsconfig.base.json	󰛦
+*tsconfig.esm.json	󰛦
+*tsconfig.node.json	󰛦
 
 # Vim
 *.vim	
@@ -94,3 +173,7 @@ fi		# FILE
 
 # Vue.js
 *.vue	
+
+# YAML
+*.yaml	
+*.yml	
