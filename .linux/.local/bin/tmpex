@@ -1,0 +1,14 @@
+#!/bin/sh
+# Invokes an editor on a temporary file and then immediately executes it
+EDITOR="${1:-$EDITOR}"
+if [ -z "$EDITOR" ]; then
+    echo "Either pass an editor as an argument or set the EDITOR environment variable" >&2
+    exit 1
+fi
+
+tmpfile=$(mktemp)
+chmod +x "$tmpfile"
+echo "#!/usr/bin/env sh" > "$tmpfile"
+$EDITOR "$tmpfile"
+"$tmpfile"
+rm "$tmpfile"
