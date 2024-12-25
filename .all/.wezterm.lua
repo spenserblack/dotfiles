@@ -47,6 +47,12 @@ config.window_frame = {
 }
 
 config.window_background_opacity = 0.95
+config.window_padding = {
+  left = 8,
+  right = 0,
+  top = 0,
+  bottom = 0,
+}
 
 config.leader = { key = "k", mods = "CTRL", timeout_milliseconds = 5000 }
 config.keys = {
