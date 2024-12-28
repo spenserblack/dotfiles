@@ -19,6 +19,17 @@ fi		# FILE
 # All Contributors
 *.all-contributorsrc	
 
+# AppImage
+# NOTE: Using proper casing breaks icon rendering?
+*.appimage	
+
+# Archive files
+*.7z		
+# NOTE: *.tar.gz doesn't work
+*.gz		
+*.tar		
+*.zip		
+
 # Batch file
 *.bat	
 *.cmd	
@@ -30,9 +41,14 @@ fi		# FILE
 *.flake8	
 *.inputrc	
 *.cfg		
+*.conf		
+*.ini		
 
 # CSS
 *.css	
+
+# Debian
+*.deb	
 
 # Devcontainers
 *.devcontainer.json	
@@ -61,6 +77,9 @@ fi		# FILE
 # EditorConfig
 *.editorconfig	
 
+# Encrypted files
+*.enc	
+
 # Git Files
 *.gitattributes		
 *.gitconfig		
@@ -74,16 +93,24 @@ fi		# FILE
 *.github	
 
 # Go
-*.go		
-*go.mod		
-*go.sum		
-*go.work	
+*.go		
+*go.mod		
+*go.sum		
+*go.work	
 
 # Homebrew
 *Brewfile	󰂘
 
 # HTML
 *.html	
+
+# Image
+*.bmp	
+*.ico	
+*.jpeg	
+*.jpg	
+*.png	
+*.svg	
 
 # JavaScript
 *.cjs	
