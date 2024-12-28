@@ -13,7 +13,7 @@ bd	b	# BLK
 cd	c	# CHR
 su	u	# SETUID
 sg	g	# SETGID
-ex		# EXEC
+ex		# EXEC
 fi		# FILE
 
 # All Contributors
