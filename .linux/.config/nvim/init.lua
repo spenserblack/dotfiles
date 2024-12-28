@@ -29,3 +29,13 @@ require("colorscheme").setup({
 -- As long as the terminal theme and the colorscheme match, a transparent background
 -- should look good.
 vim.cmd.highlight("Normal ctermbg=NONE guibg=NONE")
+
+-- Neovide-specific settings
+if vim.g.neovide then
+  vim.g.neovide_normal_opacity = 0.8
+  vim.g.neovide_transparency = 0.8
+  vim.g.neovide_scroll_animation_length = 0.1
+  vim.g.neovide_ide_mouse_when_typing = true
+  vim.g.neovide_fullscreen = true
+  vim.g.neovide_cursor_vfx_mode = "pixiedust"
+end
