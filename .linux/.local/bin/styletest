@@ -1,0 +1,37 @@
+#!/bin/sh
+# Previews text in various styles
+ESC=""
+RESET="[0m"
+BOLD="[1mBold"
+DIM="[2mDim"
+ITALIC="[3mItalic"
+UNDERLINE="[4mUnderline"
+STRIKE="[9mStrike"
+LOWERCASE="the quick brown fox jumps over the lazy dog"
+UPPERCASE="THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
+NUMBERS="0123456789"
+SYMBOLS="!@#$%^&*()_+-=[]{}|;':\0.<>?/"
+
+IFS="
+"
+
+ALLTEXT="$LOWERCASE
+$UPPERCASE
+$NUMBERS
+$SYMBOLS"
+
+ALLSTYLES="$BOLD
+$DIM
+$ITALIC
+$UNDERLINE
+$STRIKE"
+
+for text in $ALLTEXT; do
+	echo "Normal $text"
+done
+
+for style in $ALLSTYLES; do
+	for text in $ALLTEXT; do
+		echo "$ESC$style $text$ESC$RESET"
+	done
+done
