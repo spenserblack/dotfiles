@@ -136,7 +136,7 @@ fi		# FILE
 *.nvmrc		
 
 # NPM/Yarn/PNPM
-*.npmrc			
+*.npmrc				
 *package.json			
 *package-lock.json		
 *pnpm-lock.yaml			
