@@ -36,6 +36,11 @@ local next_active_window_fg = {
 
 local appearance = wezterm.gui.get_appearance()
 config.default_cursor_style = "BlinkingUnderline"
+config.font = wezterm.font_with_fallback {
+  { family = "CozetteVector", scale = 1.2 },
+  "Maple Mono NF",
+  "JetBrains Mono",
+}
 config.color_scheme = appearance_themes[appearance] or dark_theme
 config.window_frame = {
   active_titlebar_bg = appearance_active_window_bg[appearance] or dark_active_window_bg,
