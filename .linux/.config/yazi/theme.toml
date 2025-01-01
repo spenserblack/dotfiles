@@ -1,9 +1,9 @@
 [icon]
 dirs = [
     { name = ".devcontainer",   text = "" },
-    { name = ".git",            text = "" },
+    { name = ".git",            text = "", fg = "red" },
     { name = ".github",         text = "" },
-    { name = ".vscode",         text = "" },
+    { name = ".vscode",         text = "", fg = "cyan" },
     { name = "Development",     text = "󰴉" },
 ]
 exts = [
@@ -17,8 +17,8 @@ exts = [
     { name = "zip", text = "" },
 
     # Batch file
-    { name = "bat", text = "" },
-    { name = "cmd", text = "" },
+    { name = "bat", text = "", fg = "magenta" },
+    { name = "cmd", text = "", fg = "magenta" },
 
     # Config files
     { name = "cfg",     text = "" },
@@ -26,84 +26,84 @@ exts = [
     { name = "ini",     text = "" },
 
     # CSS
-    { name = "css", text = "" },
+    { name = "css", text = "", fg = "blue" },
 
     # Debian packages
-    { name = "deb", text = "" },
+    { name = "deb", text = "", fg = "red" },
 
     # Encrypted files
     { name = "enc", text = "" },
 
     # Go
-    { name = "go", text = "" },
+    { name = "go", text = "", fg = "cyan" },
 
     # HTML
-    { name = "html", text = "" },
+    { name = "html", text = "", fg = "red" },
 
     # Image
     { name = "bmp",     text = "" },
-    { name = "gif",     text = "" },
+    { name = "gif",     text = "", fg = "green" },
     { name = "ico",     text = "" },
-    { name = "jpeg",    text = "" },
-    { name = "jpg",     text = "" },
-    { name = "png",     text = "" },
-    { name = "svg",     text = "" },
-    { name = "webp",    text = "" },
+    { name = "jpeg",    text = "", fg = "yellow" },
+    { name = "jpg",     text = "", fg = "yellow" },
+    { name = "png",     text = "", fg = "blue" },
+    { name = "svg",     text = "", fg = "red" },
+    { name = "webp",    text = "", fg = "cyan" },
 
     # JavaScript
-    { name = "cjs", text = "" },
-    { name = "js",  text = "" },
-    { name = "mjs", text = "" },
+    { name = "cjs", text = "", fg = "yellow" },
+    { name = "js",  text = "", fg = "yellow" },
+    { name = "mjs", text = "", fg = "yellow" },
 
     # JSON
     { name = "json",    text = "" },
     { name = "jsonc",   text = "" },
 
     # Lua
-    { name = "lua", text = "" },
+    { name = "lua", text = "", fg = "blue" },
 
     # Markdown
-    { name = "md",          text = "" },
-    { name = "markdown",    text = "" },
+    { name = "md",          text = "", fg = "blue" },
+    { name = "markdown",    text = "", fg = "blue" },
 
     # PowerShell
-    { name = "ps1", text = "" },
+    { name = "ps1", text = "", fg = "blue" },
 
     # Python
-    { name = "py", text = "" },
+    { name = "py", text = "", fg = "blue" },
 
     # Ruby (on Rails)
-    { name = "gemspec", text = "" },
-    { name = "erb",     text = "" },
-    { name = "rb",      text = "" },
+    { name = "gemspec", text = "", fg = "red" },
+    { name = "erb",     text = "", fg = "red" },
+    { name = "rb",      text = "", fg = "red" },
 
     # Rust
-    { name = "rs", text = "" },
+    { name = "rs", text = "", fg = "red" },
 
     # SASS
-    { name = "sass", text = "" },
-    { name = "scss", text = "" },
+    { name = "sass", text = "", fg = "magenta" },
+    { name = "scss", text = "", fg = "magenta" },
 
     # Shell
-    { name = "bash",    text = "" },
-    { name = "nu",      text = "" },
-    { name = "sh",      text = "" },
-    { name = "zsh",     text = "" },
+    { name = "bash",    text = "", fg = "magenta" },
+    { name = "nu",      text = "", fg = "green" },
+    { name = "sh",      text = "", fg = "magenta" },
+    { name = "zsh",     text = "", fg = "blue" },
 
     # Svelte
-    { name = "svelte", text = "" },
+    { name = "svelte", text = "", fg = "red" },
 
     # TOML
     { name = "toml", text = "" },
 
     # TypeScript
-    { name = "ts", text = "󰛦" },
+    { name = "ts", text = "󰛦", fg = "blue" },
 
     # Vim
-    { name = "vim", text = "" },
+    { name = "vim", text = "", fg = "green" },
 
     # Vue.js
-    { name = "vue", text = "" },
+    { name = "vue", text = "", fg = "green" },
 
     # YAML
     { name = "yaml",    text = "" },
@@ -129,8 +129,8 @@ files = [
     { name = ".envrc", text = "" },
 
     # Docker
-    { name = ".dockerignore",   text = "󰡨" },
-    { name = "Dockerfile",      text = "󰡨" },
+    { name = ".dockerignore",   text = "󰡨", fg = "blue" },
+    { name = "Dockerfile",      text = "󰡨", fg = "blue" },
 
     # Documentation
     { name = "CODE_OF_CONDUCT.md",  text = "" },
@@ -145,79 +145,79 @@ files = [
     { name = ".editorconfig", text = "" },
 
     # Git
-    { name = ".gitattributes",          text = "" },
-    { name = ".gitconfig",              text = "" },
-    { name = ".gitignore",              text = "" },
-    { name = ".gitkeep",                text = "" },
-    { name = ".gitmodules",             text = "" },
-    { name = ".git-blame-ignore-revs",  text = "" },
-    { name = ".mailmap",                text = "" },
+    { name = ".gitattributes",          text = "", fg = "red" },
+    { name = ".gitconfig",              text = "", fg = "red" },
+    { name = ".gitignore",              text = "", fg = "red" },
+    { name = ".gitkeep",                text = "", fg = "red" },
+    { name = ".gitmodules",             text = "", fg = "red" },
+    { name = ".git-blame-ignore-revs",  text = "", fg = "red" },
+    { name = ".mailmap",                text = "", fg = "red" },
 
     # GitHub
-    { name = "dependabot.yml", text = "" },
+    { name = "dependabot.yml", text = "", fg = "blue" },
 
     # Go
-    { name = "go.mod",  text = "" },
-    { name = "go.sum",  text = "" },
-    { name = "go.work", text = "" },
+    { name = "go.mod",  text = "", fg = "cyan" },
+    { name = "go.sum",  text = "", fg = "cyan" },
+    { name = "go.work", text = "", fg = "cyan" },
 
     # Homebrew
     { name = "Brewfile", text = "󰂘" },
 
     # Makefile
-    { name = "Makefile", text = "" },
+    { name = "Makefile", text = "", fg = "green" },
 
     # Node.js
-    { name = ".node-version",   text = "" },
-    { name = ".nvmrc",          text = "" },
+    { name = ".node-version",   text = "", fg = "green" },
+    { name = ".nvmrc",          text = "", fg = "green" },
 
     # NPM/PNPM/Yarn
-    { name = ".npmignore",          text = "" },
-    { name = ".npmrc",              text = "" },
-    { name = "package.json",        text = "" },
-    { name = "package-lock.json",   text = "" },
-    { name = "pnpm-lock.yaml",      text = "" },
-    { name = "pnpm-workspace.yaml", text = "" },
-    { name = "yarn.lock",           text = "" },
+    { name = ".npmignore",          text = "", fg = "red" },
+    { name = ".npmrc",              text = "", fg = "red" },
+    { name = "package.json",        text = "", fg = "red" },
+    { name = "package-lock.json",   text = "", fg = "red" },
+    { name = "pnpm-lock.yaml",      text = "", fg = "yellow" },
+    { name = "pnpm-workspace.yaml", text = "", fg = "yellow" },
+    { name = "yarn.lock",           text = "", fg = "blue" },
 
     # Prettier
     { name = ".prettierignore",     text = "" },
-    { name = ".prettierrc.json",    text = "" },
+    { name = ".prettierrc.json",    text = "", fg = "yellow" },
 
     # Ruby (on Rails)
     { name = ".irbrc",          text = "" },
-    { name = ".ruby-version",   text = "" },
-    { name = "config.ru",       text = "" },
-    { name = "Gemfile",         text = "" },
-    { name = "Gemfile.lock",    text = "" },
-    { name = "Rakefile",        text = "" },
+    { name = ".ruby-version",   text = "", fg = "red" },
+    { name = "config.ru",       text = "", fg = "red" },
+    { name = "Gemfile",         text = "", fg = "blue" },
+    { name = "Gemfile.lock",    text = "", fg = "blue" },
+    { name = "Rakefile",        text = "", fg = "red" },
 
     # Rust
-    { name = "Cargo.toml", text = "" },
+    { name = "Cargo.toml", text = "", fg = "yellow" },
     { name = "Cargo.lock", text = "" },
 
     # Shell
-    { name = ".bash_aliases",   text = "" },
-    { name = ".bashrc",         text = "" },
+    { name = ".bash_aliases",   text = "", fg = "magenta" },
+    { name = ".bashrc",         text = "", fg = "magenta" },
     { name = ".profile",        text = "" },
-    { name = ".zshrc",          text = "" },
-    { name = ".zprofile",       text = "" },
+    { name = ".zshrc",          text = "", fg = "blue" },
+    { name = ".zprofile",       text = "", fg = "blue" },
 
     # TODO
-    { name = "TODO",        text = "" },
-    { name = "TODO.md",     text = "" },
-    { name = "TODO.txt",    text = "" },
+    { name = "TODO",        text = "", fg = "green" },
+    { name = "TODO.md",     text = "", fg = "blue" },
+    { name = "TODO.txt",    text = "", fg = "green" },
 
     # TypeScript
-    { name = "tsconfig.json", text = "󰛦" },
+    { name = "tsconfig.json", text = "󰛦", fg = "blue" },
 
     # Vim
-    { name = ".vimrc", text = "" },
+    { name = ".vimrc", text = "", fg = "green" },
 ]
 
 globs = [
     # Docker
-    { name = "**/Dockerfile.*", text = "󰡨" },
+    { name = "**/Dockerfile.*", text = "󰡨", fg = "blue" },
 
     # Documentation
     { name = "**/LICENSE-*",    text = "" },
@@ -227,11 +227,11 @@ globs = [
     { name = "**/.env.*", text = "" },
 
     # GitHub
-    { name = "**/.github/workflows/*.{yaml,yml}", text = "" },
+    { name = "**/.github/workflows/*.{yaml,yml}", text = "", fg = "blue" },
 
     # Makefile
-    { name = "**/Makefile.*", text = "" },
+    { name = "**/Makefile.*", text = "", fg = "green" },
 
     # TypeScript
-    { name = "**/tsconfig.*.json", text = "󰛦" },
+    { name = "**/tsconfig.*.json", text = "󰛦", fg = "blue" },
 ]
