@@ -37,7 +37,7 @@ local next_active_window_fg = {
 local appearance = wezterm.gui.get_appearance()
 config.default_cursor_style = "BlinkingUnderline"
 config.font = wezterm.font_with_fallback {
-  "Maple Mono NF",
+  { family = "Maple Mono NF", scale = 1.2 },
   { family = "CozetteVector", scale = 1.2 },
   "JetBrains Mono",
 }
