@@ -114,6 +114,9 @@ exts = [
 ]
 
 files = [
+    # All Contributors
+    { name = ".all-contributorsrc", text = "", fg = "magenta" },
+
     # CODEOWNERS
     { name = "CODEOWNERS", text = "󰁥" },
 
