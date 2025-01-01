@@ -108,6 +108,9 @@ exts = [
     # YAML
     { name = "yaml",    text = "" },
     { name = "yml",     text = "" },
+
+    # XML
+    { name = "xml", text = "󰗀" },
 ]
 
 files = [
