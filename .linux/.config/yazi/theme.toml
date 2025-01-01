@@ -1,0 +1,234 @@
+[icon]
+dirs = [
+    { name = ".devcontainer",   text = "" },
+    { name = ".git",            text = "" },
+    { name = ".github",         text = "" },
+    { name = ".vscode",         text = "" },
+    { name = "Development",     text = "󰴉" },
+]
+exts = [
+    # AppImage
+    { name = "AppImage", text = "" },
+
+    # Archive files
+    { name = "7z",  text = "" },
+    { name = "gz",  text = "" },
+    { name = "tar", text = "" },
+    { name = "zip", text = "" },
+
+    # Batch file
+    { name = "bat", text = "" },
+    { name = "cmd", text = "" },
+
+    # Config files
+    { name = "cfg",     text = "" },
+    { name = "conf",    text = "" },
+    { name = "ini",     text = "" },
+
+    # CSS
+    { name = "css", text = "" },
+
+    # Debian packages
+    { name = "deb", text = "" },
+
+    # Encrypted files
+    { name = "enc", text = "" },
+
+    # Go
+    { name = "go", text = "" },
+
+    # HTML
+    { name = "html", text = "" },
+
+    # Image
+    { name = "bmp",     text = "" },
+    { name = "gif",     text = "" },
+    { name = "ico",     text = "" },
+    { name = "jpeg",    text = "" },
+    { name = "jpg",     text = "" },
+    { name = "png",     text = "" },
+    { name = "svg",     text = "" },
+    { name = "webp",    text = "" },
+
+    # JavaScript
+    { name = "cjs", text = "" },
+    { name = "js",  text = "" },
+    { name = "mjs", text = "" },
+
+    # JSON
+    { name = "json",    text = "" },
+    { name = "jsonc",   text = "" },
+
+    # Lua
+    { name = "lua", text = "" },
+
+    # Markdown
+    { name = "md",          text = "" },
+    { name = "markdown",    text = "" },
+
+    # PowerShell
+    { name = "ps1", text = "" },
+
+    # Python
+    { name = "py", text = "" },
+
+    # Ruby (on Rails)
+    { name = "gemspec", text = "" },
+    { name = "erb",     text = "" },
+    { name = "rb",      text = "" },
+
+    # Rust
+    { name = "rs", text = "" },
+
+    # SASS
+    { name = "sass", text = "" },
+    { name = "scss", text = "" },
+
+    # Shell
+    { name = "bash",    text = "" },
+    { name = "nu",      text = "" },
+    { name = "sh",      text = "" },
+    { name = "zsh",     text = "" },
+
+    # Svelte
+    { name = "svelte", text = "" },
+
+    # TOML
+    { name = "toml", text = "" },
+
+    # TypeScript
+    { name = "ts", text = "󰛦" },
+
+    # Vim
+    { name = "vim", text = "" },
+
+    # Vue.js
+    { name = "vue", text = "" },
+
+    # YAML
+    { name = "yaml",    text = "" },
+    { name = "yml",     text = "" },
+]
+
+files = [
+    # CODEOWNERS
+    { name = "CODEOWNERS", text = "󰁥" },
+
+    # Config files
+    { name = ".flake8",     text = "" },
+    { name = ".inputrc",    text = "" },
+
+    # Devcontainers
+    { name = ".devcontainer.json",  text = "" },
+    { name = "devcontainer.json",   text = "" },
+
+    # Direnv
+    { name = ".envrc", text = "" },
+
+    # Docker
+    { name = ".dockerignore",   text = "󰡨" },
+    { name = "Dockerfile",      text = "󰡨" },
+
+    # Documentation
+    { name = "CODE_OF_CONDUCT.md",  text = "" },
+    { name = "CONTRIBUTING.md",     text = "" },
+    { name = "LICENSE",             text = "" },
+    { name = "README",              text = "" },
+
+    # Dotenv
+    { name = ".env", text = "" },
+
+    # EditorConfig
+    { name = ".editorconfig", text = "" },
+
+    # Git
+    { name = ".gitattributes",          text = "" },
+    { name = ".gitconfig",              text = "" },
+    { name = ".gitignore",              text = "" },
+    { name = ".gitkeep",                text = "" },
+    { name = ".gitmodules",             text = "" },
+    { name = ".git-blame-ignore-revs",  text = "" },
+    { name = ".mailmap",                text = "" },
+
+    # GitHub
+    { name = "dependabot.yml", text = "" },
+
+    # Go
+    { name = "go.mod",  text = "" },
+    { name = "go.sum",  text = "" },
+    { name = "go.work", text = "" },
+
+    # Homebrew
+    { name = "Brewfile", text = "󰂘" },
+
+    # Makefile
+    { name = "Makefile", text = "" },
+
+    # Node.js
+    { name = ".node-version",   text = "" },
+    { name = ".nvmrc",          text = "" },
+
+    # NPM/PNPM/Yarn
+    { name = ".npmignore",          text = "" },
+    { name = ".npmrc",              text = "" },
+    { name = "package.json",        text = "" },
+    { name = "package-lock.json",   text = "" },
+    { name = "pnpm-lock.yaml",      text = "" },
+    { name = "pnpm-workspace.yaml", text = "" },
+    { name = "yarn.lock",           text = "" },
+
+    # Prettier
+    { name = ".prettierignore",     text = "" },
+    { name = ".prettierrc.json",    text = "" },
+
+    # Ruby (on Rails)
+    { name = ".irbrc",          text = "" },
+    { name = ".ruby-version",   text = "" },
+    { name = "config.ru",       text = "" },
+    { name = "Gemfile",         text = "" },
+    { name = "Gemfile.lock",    text = "" },
+    { name = "Rakefile",        text = "" },
+
+    # Rust
+    { name = "Cargo.toml", text = "" },
+    { name = "Cargo.lock", text = "" },
+
+    # Shell
+    { name = ".bash_aliases",   text = "" },
+    { name = ".bashrc",         text = "" },
+    { name = ".profile",        text = "" },
+    { name = ".zshrc",          text = "" },
+    { name = ".zprofile",       text = "" },
+
+    # TODO
+    { name = "TODO",        text = "" },
+    { name = "TODO.md",     text = "" },
+    { name = "TODO.txt",    text = "" },
+
+    # TypeScript
+    { name = "tsconfig.json", text = "󰛦" },
+
+    # Vim
+    { name = ".vimrc", text = "" },
+]
+
+globs = [
+    # Docker
+    { name = "**/Dockerfile.*", text = "󰡨" },
+
+    # Documentation
+    { name = "**/LICENSE-*",    text = "" },
+    { name = "**/README.*",     text = "" },
+
+    # Dotenv
+    { name = "**/.env.*", text = "" },
+
+    # GitHub
+    { name = "**/.github/workflows/*.{yaml,yml}", text = "" },
+
+    # Makefile
+    { name = "**/Makefile.*", text = "" },
+
+    # TypeScript
+    { name = "**/tsconfig.*.json", text = "󰛦" },
+]
