@@ -30,6 +30,7 @@ exts = [
     # C
     { name = "c", text = "", fg = "blue" },
     { name = "h", text = "", fg = "magenta" },
+    { name = "o", text = "󱉟" },
 
     # Config files
     { name = "cfg",     text = "" },
