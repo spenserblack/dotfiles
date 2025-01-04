@@ -1,10 +1,14 @@
 [icon]
 dirs = [
     { name = ".devcontainer",   text = "" },
+    { name = ".direnv",         text = "" },
     { name = ".git",            text = "", fg = "red" },
     { name = ".github",         text = "" },
+    { name = ".venv",           text = "", fg = "green" },
     { name = ".vscode",         text = "", fg = "cyan" },
+    { name = "__pycache__",     text = "", fg = "blue" },
     { name = "Development",     text = "󰴉" },
+    { name = "node_modules",    text = "", fg = "green" },
 ]
 exts = [
     # AppImage
@@ -16,9 +20,16 @@ exts = [
     { name = "tar", text = "" },
     { name = "zip", text = "" },
 
+    # Backups
+    { name = "bak", text = "󰁯" },
+
     # Batch file
     { name = "bat", text = "", fg = "magenta" },
     { name = "cmd", text = "", fg = "magenta" },
+
+    # C
+    { name = "c", text = "", fg = "blue" },
+    { name = "h", text = "", fg = "magenta" },
 
     # Config files
     { name = "cfg",     text = "" },
@@ -27,6 +38,11 @@ exts = [
 
     # CSS
     { name = "css", text = "", fg = "blue" },
+
+    # Databases
+    { name = "db",      text = "󰆼", fg = "red" },
+    { name = "sqlite",  text = "󰆼", fg = "blue" },
+    { name = "sqlite3", text = "󰆼", fg = "blue" },
 
     # Debian packages
     { name = "deb", text = "", fg = "red" },
@@ -187,6 +203,10 @@ files = [
     { name = ".prettierignore",     text = "" },
     { name = ".prettierrc.json",    text = "", fg = "yellow" },
 
+    # Python
+    { name = "poetry.lock",     text = "", fg = "cyan" },
+    { name = "pyproject.toml",  text = "", fg = "cyan" },
+
     # Ruby (on Rails)
     { name = ".irbrc",          text = "" },
     { name = ".ruby-version",   text = "", fg = "red" },
@@ -205,6 +225,9 @@ files = [
     { name = ".profile",        text = "" },
     { name = ".zshrc",          text = "", fg = "blue" },
     { name = ".zprofile",       text = "", fg = "blue" },
+
+    # Spell checker
+    { name = ".cspell.json", text = "󰓆", fg = "green" },
 
     # TODO
     { name = "TODO",        text = "", fg = "green" },
