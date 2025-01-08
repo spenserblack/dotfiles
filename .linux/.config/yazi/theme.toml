@@ -187,6 +187,10 @@ files = [
     # Makefile
     { name = "Makefile", text = "", fg = "green" },
 
+    # nano
+    { name = ".nanorc", text = "" },
+    { name = "nanorc",  text = "" },
+
     # Node.js
     { name = ".node-version",   text = "", fg = "green" },
     { name = ".nvmrc",          text = "", fg = "green" },
