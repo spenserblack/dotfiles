@@ -1,0 +1,5 @@
+set atblanks
+set autoindent
+set indicator
+set linenumbers
+set smarthome
