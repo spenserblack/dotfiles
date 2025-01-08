@@ -8,7 +8,10 @@ dirs = [
     { name = ".vscode",         text = "", fg = "cyan" },
     { name = "__pycache__",     text = "", fg = "blue" },
     { name = "Development",     text = "󰴉" },
+    { name = "docs",            text = "󰲂", fg = "blue" },
     { name = "node_modules",    text = "", fg = "green" },
+    { name = "target",          text = "󱥿", fg = "green" },
+    { name = "tmp",             text = "󰪻", fg = "yellow" },
 ]
 exts = [
     # AppImage
@@ -140,6 +143,9 @@ files = [
     # Config files
     { name = ".flake8",     text = "" },
     { name = ".inputrc",    text = "" },
+
+    # Clang Format
+    { name = ".clang-format", text = "", fg = "yellow" },
 
     # Devcontainers
     { name = ".devcontainer.json",  text = "" },
