@@ -194,7 +194,7 @@ files = [
     { name = "Makefile", text = "", fg = "green" },
 
     # MPV
-    { name = "mpv.conf", text = "" },
+    { name = "mpv.conf", text = "", fg = "magenta" },
 
     # nano
     { name = ".nanorc", text = "" },
