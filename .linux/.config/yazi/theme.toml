@@ -193,6 +193,9 @@ files = [
     # Makefile
     { name = "Makefile", text = "", fg = "green" },
 
+    # MPV
+    { name = "mpv.conf", text = "" },
+
     # nano
     { name = ".nanorc", text = "" },
     { name = "nanorc",  text = "" },
