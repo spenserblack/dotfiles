@@ -21,10 +21,14 @@ These are optional tasks that I may or may not want to do, so I don't want to sc
   - Add `mislav/gh-license` extension
 - [Install VS Code](https://code.visualstudio.com/)
 - Import [GitHub's GPG key](https://github.com/web-flow.gpg)
-- Install [A Nerd Font](https://www.nerdfonts.com/font-downloads)
+- Install [WezTerm](https://github.com/wez/wezterm)
+
+#### Fonts
+
+- [Maple Mono](https://github.com/subframe7536/maple-font)
+- [Nerd Fonts](https://www.nerdfonts.com/font-downloads):
   - CaskaydiaCove
   - Monaspice (see [monaspace docs](https://monaspace.githubnext.com/))
-- Install [WezTerm](https://github.com/wez/wezterm)
 
 ```shell
 git config --global commit.gpgSign true
