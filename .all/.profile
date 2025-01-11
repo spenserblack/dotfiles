@@ -75,3 +75,16 @@ elif command -v vim &> /dev/null; then
 else
     export EDITOR="vi"
 fi
+
+function yz() {
+    if ! command -v yazi &> /dev/null; then
+        echo "yazi is not installed"
+        return 1
+    fi
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+        builtin cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
+}
