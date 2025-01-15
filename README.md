@@ -15,12 +15,12 @@ These are optional tasks that I may or may not want to do, so I don't want to sc
 - [Install Python](https://www.python.org/)
 - [Install Rust](https://www.rust-lang.org/learn/get-started)
 - Import/setup GPG key
+- Import [GitHub's GPG key](https://github.com/web-flow.gpg)
 - [Install Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
   - [Install `lazy.nvim`](https://lazy.folke.io/installation)
 - [Install GitHub CLI](https://github.com/cli/cli)
   - Add `mislav/gh-license` extension
 - [Install VS Code](https://code.visualstudio.com/)
-- Import [GitHub's GPG key](https://github.com/web-flow.gpg)
 - Install [WezTerm](https://github.com/wez/wezterm)
 
 #### Fonts
@@ -52,6 +52,7 @@ git config --global tag.gpgSign true
 - `git-extras`
 - `highlight`
 - `jq`
+- [`lsd`](https://github.com/lsd-rs/lsd)
 - `pass`
 - `ranger`
 - `ruby`
