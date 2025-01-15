@@ -35,3 +35,7 @@ alias mime='file --mime-type'
 alias nv=nvim
 
 export GPG_TTY=$(tty)
+
+if command -v starship &> /dev/null; then
+  eval "$(starship init zsh)"
+fi
