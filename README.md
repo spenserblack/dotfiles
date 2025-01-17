@@ -29,6 +29,7 @@ These are optional tasks that I may or may not want to do, so I don't want to sc
 - [Nerd Fonts](https://www.nerdfonts.com/font-downloads):
   - CaskaydiaCove
   - Monaspice (see [monaspace docs](https://monaspace.githubnext.com/))
+  - Victor Mono
 
 ```shell
 git config --global commit.gpgSign true
