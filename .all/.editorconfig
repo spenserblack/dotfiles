@@ -30,6 +30,7 @@ indent_size = 4
 # Go
 [*.go]
 indent_style = tab
+indent_size = 4
 
 # HTML
 [*.html]
@@ -54,6 +55,7 @@ indent_size = 2
 # Makefile
 [Makefile]
 indent_style = tab
+indent_size = 8
 
 # Nushell
 [*.nu]
