@@ -36,6 +36,7 @@ alias nv=nvim
 
 export GPG_TTY=$(tty)
 
-if command -v starship &> /dev/null; then
-  eval "$(starship init zsh)"
-fi
+# NOTE: Uncomment to enable starship
+# if command -v starship &> /dev/null; then
+#   eval "$(starship init zsh)"
+# fi
