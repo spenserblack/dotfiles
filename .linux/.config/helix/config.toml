@@ -5,6 +5,10 @@ color-modes = true
 cursorline = true
 mouse = false
 
+[editor.lsp]
+display-inlay-hints = true
+snippets = false
+
 [editor.file-picker]
 hidden = true
 
