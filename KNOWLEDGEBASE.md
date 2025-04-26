@@ -1,6 +1,6 @@
 # Knowledge Base
 
-Various links and notes for basic knowledge.
+Various links and notes for basic knowledge. Especially things I do so infrequently that I'll probably forget.
 
 ## Any OS
 
