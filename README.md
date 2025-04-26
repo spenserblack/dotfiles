@@ -60,14 +60,6 @@ git config --global tag.gpgSign true
 - `ruby-dev`
 - `tig`
 
-##### Desktop
-
-- `oneko`
-
-##### WSL
-
-- `wslu`
-
 #### Cargo Crates (`cargo install [--locked]`)
 
 - `gengo-bin`
