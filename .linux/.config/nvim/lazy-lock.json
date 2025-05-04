@@ -1,7 +1,8 @@
 {
   "colorscheme.nvim": { "branch": "main", "commit": "28fb54a73819ca9ff60fb2051b85c1f3fc1a7bcc" },
-  "copilot.vim": { "branch": "release", "commit": "87038123804796ca7af20d1b71c3428d858a9124" },
-  "lazy.nvim": { "branch": "main", "commit": "b1134ab82ee4279e31f7ddf7e34b2a99eb9b7bc9" },
-  "nui.nvim": { "branch": "main", "commit": "b58e2bfda5cea347c9d58b7f11cf3012c7b3953f" },
-  "rose-pine": { "branch": "main", "commit": "07a887a7bef4aacea8c7caebaf8cbf808cdc7a8e" }
+  "copilot.vim": { "branch": "release", "commit": "7167958954532a0a1b83f2db2f591b43aebff44c" },
+  "dot-nvim.nvim": { "branch": "main", "commit": "5f9755407a83064047dca77aa39d67a79ca5978a" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "nui.nvim": { "branch": "main", "commit": "f535005e6ad1016383f24e39559833759453564e" },
+  "rose-pine": { "branch": "main", "commit": "614892e32e94378d976a238f287532cfe790c1fe" }
 }
