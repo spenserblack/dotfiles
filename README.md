@@ -32,6 +32,7 @@ These are optional tasks that I may or may not want to do, so I don't want to sc
   - Victor Mono
 
 ```shell
+# Configure git
 git config --global commit.gpgSign true
 git config --global core.editor nvim
 git config --global core.cleanup scissors
@@ -41,6 +42,9 @@ git config --global init.defaultBranch main
 git config --global push.autoSetupRemote true
 git config --global rebase.autoSquash true
 git config --global tag.gpgSign true
+
+# Recognize GitHub's PGP key
+curl https://github.com/web-flow.gpg | gpg --import
 ```
 
 #### APT Packages (`sudo apt install`)
