@@ -1,6 +1,5 @@
 {
   "colorscheme.nvim": { "branch": "main", "commit": "28fb54a73819ca9ff60fb2051b85c1f3fc1a7bcc" },
-  "copilot.vim": { "branch": "release", "commit": "da369d90cfd6c396b1d0ec259836a1c7222fb2ea" },
   "dot-nvim.nvim": { "branch": "main", "commit": "5f9755407a83064047dca77aa39d67a79ca5978a" },
   "lazy.nvim": { "branch": "main", "commit": "85c7ff3711b730b4030d03144f6db6375044ae82" },
   "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
