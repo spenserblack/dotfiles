@@ -1,4 +1,5 @@
 require("config.lazy")
+require("lazy").setup("plugins")
 vim.opt.title = true
 vim.opt.number = true
 vim.opt.statusline = "%.50f %m %R %= %l/%L (%c) %p%% %= 0x%B %Y"
