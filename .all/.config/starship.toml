@@ -22,7 +22,7 @@ $nodejs\
 $nim\
 $rust\
 $scala\
-[](fg:#86BBD8)\
+[](fg:#86BBD8) \
 """
 
 # Disable the blank line at the start of the prompt
