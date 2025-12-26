@@ -62,6 +62,11 @@ indent_size = 2
 indent_style = tab
 indent_size = 8
 
+# Nix
+[*.nix]
+indent_style = space
+indent_size = 2
+
 # Nushell
 [*.nu]
 indent_style = space
