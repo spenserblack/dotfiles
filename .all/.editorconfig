@@ -12,6 +12,11 @@ end_of_line = CRLF
 indent_style = space
 indent_size = 4
 
+# AWK
+[*.awk]
+indent_style = space
+indent_size = 2
+
 # Batch files
 [*.{bat,cmd}]
 end_of_line = CRLF
