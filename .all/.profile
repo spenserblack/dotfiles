@@ -36,7 +36,9 @@ fi
 if [ -d "/usr/local/go/bin" ] ; then
     PATH="/usr/local/go/bin:$PATH"
     eval "$(go env)"
-    PATH="$GOBIN:$PATH"
+    if [ ! -z "$GOBIN" ]; then
+        PATH="$GOBIN:$PATH"
+    fi
     PATH="$GOPATH/bin:$PATH"
 fi
 
