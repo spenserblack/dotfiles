@@ -32,6 +32,11 @@ indent_style = tab
 indent_style = space
 indent_size = 2
 
+# Docker
+[Dockerfile]
+indent_style = space
+indent_size = 4
+
 # Fish
 [*.fish]
 indent_style = space
